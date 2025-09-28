@@ -3,7 +3,7 @@ _A DATASET FOR EQUITABLE MULTILINGUAL LLMS_
 
 Accompanying the Open review Submission [24079_MILA_MULTILINGUAL_INDIC_.pdf](https://github.com/anonymous-submitter0104/iclr-submission/blob/8308c89a777334fbeedba203fbb400c464961c60/24079_MILA_MULTILINGUAL_INDIC_.pdf) 
 
-Accompanying Open Source Data Release: https://github.com/anonymous-submitter0104/iclr-submission/tree/1ba986a2a4086480228f18683cef1cf75f5f8aff/Open%20Source%20Release
+Accompanying Open Source Data Release: [Open Source Data Release](https://github.com/anonymous-submitter0104/iclr-submission/blob/8308c89a777334fbeedba203fbb400c464961c60/24079_MILA_MULTILINGUAL_INDIC_.pdf)
 Long Technical Report Link: 
 
 ### Disclaimer
