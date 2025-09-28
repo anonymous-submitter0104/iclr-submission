@@ -1,5 +1,7 @@
 ### MILA (MULTILINGUAL INDIC LANGUAGE ARCHIVE): A DATASET FOR EQUITABLE MULTILINGUAL LLMS 
 
+<Link to Detailed Technical Report> 
+
 ### Disclaimer
 
 This repository is part of a research effort submitted to ICLR. 
