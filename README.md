@@ -25,4 +25,10 @@ The planned open release will include:
 
 All releases will be hosted on Hugging Face after the review process, in compliance with open-source best practices.
 
+## Repository Structure
+
+<!-- TREE_START -->
+<!-- TREE_END -->
+
+
 
