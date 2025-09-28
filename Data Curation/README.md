@@ -53,6 +53,13 @@ This section describes our **curation pipeline** and the **ablation experiment**
 
 ## Base Pretraining Checkpoint
 
+For Ablation study purposes we chose the 2.9B param range of model to test it on.
+Based on our internal experimentatin , we have empirically observed a scaling effect applicable from small models to typical medium sized and large size models.
+https://ar5iv.labs.arxiv.org/html/2001.08361
+https://arxiv.org/abs/2403.06563
+https://arxiv.org/html/2412.01505
+https://www.emergentmind.com/papers/2403.08540
+
 * **Model**: Param-1 PT (2.9B parameters)
 * **Checkpoint Source**: [Hugging Face: Param-1 PT1](https://huggingface.co/bharatgenai/Param-1)
 * **Training Recipe**: As described in [Param Paper](https://arxiv.org/pdf/2507.13390)
@@ -171,3 +178,6 @@ This makes it look **professional, technical, and reproducible**. It has:
 | Curated        | 53.6              | 74.2          | 73.8            | 41.4              | 46.2     | 34.6        |
 
 
+### Observation of the Resutls
+
+We observe that after performing curation increase in the score on the various benhcmarks are obtained.
