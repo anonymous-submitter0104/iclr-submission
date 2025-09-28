@@ -1,9 +1,23 @@
-MILA Submission ICLR. (We were actually very confused what name to put but we have actually come up with some better name for the paper: Samhita: Empowering Indian AI Ecosystem to Sovereignty with Open Data Recipes and Datasets for Pre-Training and Fine-tuning Frontier-Grade Foundational Models)
+MILA (MULTILINGUAL INDIC LANGUAGE ARCHIVE): A DATASET FOR EQUITABLE MULTILINGUAL LLMS 
 
-Our AIM: We are going to open source Indian Mutlilingual Data for the empowering the open source community AI. In fact all our pipelines are using the open source models that are available on Hugging face and not using any closed source LLMs or VLMs or AI Models. We want to empower soverignity in the Indic AI Community.
+### Disclaimer
 
-We are planning to open release the data on hugging face soon. Our plan is not just to release the "Data" but the "Data preparation Recipies", so that we can empower the community to be soverign. And all of our Recipies given, whose code base also we will release all are using only Open Source AI Models. 
+This repository is part of a research effort submitted to ICLR. 
 
-Open release will contain:
-2T Tokens of High Quality Data Pretraining Data, 300M Image-Text Pairs (Spanning Indian Languages for building Indic OCR/VLM Models), Indic-Persona Hub (200M Indian Virtual Personas), India Centric Parallel Translated Corpora, Indic MMLU for 22 Languages, India-Specific Domain oriented Taxonomies, High Quality Web Crawled English and Indic-General SFT Dataset.
+Our objective is to open-source large-scale **Indian multilingual datasets** with the aim of strengthening the open-source AI ecosystem and fostering sovereignty within the Indic AI community. Importantly, all our pipelines are built exclusively on **open-source models available on Hugging Face**. No closed-source LLMs, VLMs, or proprietary AI systems are used at any stage.
+
+We intend to release not only the datasets but also the **data preparation recipes** and the accompanying open-source code. By doing so, we hope to enable the community to reproduce, extend, and innovate upon our methods in a fully transparent and sovereign manner.
+
+The planned open release will include:
+
+* **2T tokens** of high-quality pretraining data
+* **300M image–text pairs** (spanning Indian languages, enabling Indic OCR and VLM development)
+* **Indic Persona Hub** (~200M Indian virtual personas)
+* **India-centric parallel translated corpora**
+* **Indic MMLU** benchmark covering 22 languages
+* **Domain-specific Indian taxonomies**
+* **High-quality web-crawled English and Indic SFT datasets**
+
+All releases will be hosted on Hugging Face after the review process, in compliance with open-source best practices.
+
 
