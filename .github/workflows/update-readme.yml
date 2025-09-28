@@ -1,10 +1,10 @@
 name: Auto-update README with directory tree
 
 on:
+  workflow_dispatch:
   push:
     branches: [ main ]
-  workflow_dispatch:
-
+  
 jobs:
   update-readme:
     runs-on: ubuntu-latest
