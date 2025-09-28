@@ -16,7 +16,7 @@ The planned open release will include:
 * **India-centric parallel translated corpora**
 * **Indic MMLU** benchmark covering 22 languages
 * **Domain-specific Indian taxonomies**
-* **High-quality web-crawled English and Indic SFT datasets**
+* **High-quality web-crawled English**
 
 All releases will be hosted on Hugging Face after the review process, in compliance with open-source best practices.
 
