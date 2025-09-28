@@ -1,0 +1,31 @@
+name: Auto-update README with directory tree
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Install tree
+        run: sudo apt-get install -y tree
+
+      - name: Generate directory tree
+        run: |
+          tree -a -I ".git|.github|__pycache__|*.pyc|*.ipynb_checkpoints" > TREE.md
+
+      - name: Update README
+        run: |
+          awk '/<!-- TREE_START -->/{flag=1;print;system("cat TREE.md");next}/<!-- TREE_END -->/{flag=0} !flag' README.md > README_new.md
+          mv README_new.md README.md
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add README.md
+          git commit -m "Auto-update directory structure" || echo "No changes to commit"
+          git push
