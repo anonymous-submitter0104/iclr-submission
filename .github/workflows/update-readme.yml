@@ -19,7 +19,11 @@ jobs:
 
       - name: Update README
         run: |
-          awk '/<!-- TREE_START -->/{flag=1;print;system("cat TREE.md");next}/<!-- TREE_END -->/{flag=0} !flag' README.md > README_new.md
+          # Keep everything before TREE_START, insert tree, then everything after TREE_END
+          awk 'BEGIN{print_section=1} \
+               /<!-- TREE_START -->/{print; system("echo '```'"); system("cat TREE.md"); system("echo '```'"); skip=1; next} \
+               /<!-- TREE_END -->/{skip=0} \
+               !skip{print}' README.md > README_new.md
           mv README_new.md README.md
 
       - name: Commit changes
