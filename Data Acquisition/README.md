@@ -13,7 +13,7 @@ We aggregate large-scale corpora from **multi-source web crawling**, **curated o
 
 **Key Sources**
 - **Web Crawl + Open Datasets**
-  - Multi-lingual websites, forums, academic repositories
+  - Common Crawl, Multi-lingual websites, forums, academic repositories
   - >1700 datasets hosted on [Hugging Face](https://huggingface.co)
 - **Book Collections**
   - ~1M books from [Archive.org](https://archive.org)
