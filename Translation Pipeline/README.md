@@ -158,6 +158,28 @@ Output Requirements:
 
 ---
 
+## Folder Structure
+
+```
+experiments/
+ ├── data_curation/
+ │    ├── configs/
+ │    │    └── curator.yaml
+ │    ├── scripts/
+ │    │    ├── run_curator.sh
+ │    │    ├── download_raw.sh
+ │    ├── notebooks/
+ │    │    └── quality_checks.ipynb
+ │    └── README.md
+ ├── pretraining/
+ │    ├── train_curated.sh
+ │    ├── train_noncurated.sh
+ │    └── configs/
+ │         └── param_ablation.yaml
+```
+
+---
+
 ## Experimental Results
 
 ### Translation Model Performance (FLORES Benchmarks using chrF++)
