@@ -59,6 +59,7 @@ We aggregate large-scale corpora from **multi-source web crawling**, **curated o
 
 ## Folder Structure
 
+```
 experiments/
  ├── data_acquisition/
  │    ├── configs/
@@ -73,6 +74,7 @@ experiments/
  │    └── README.md
  ├── data_curation/
  └── pretraining/
+```
 
 ---
 
