@@ -9,7 +9,7 @@ This section describes our **curation pipeline** and the **ablation experiment**
 ---
 ### Curation Pipeline
 
-![Curation Pipeline](./readme-resources/data-curation.png)
+![Curation Pipeline](/readme-resources/data-curation.png)
 
 ---
 
