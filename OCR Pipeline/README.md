@@ -21,6 +21,8 @@ Indic languages face significant digital scarcity, particularly low-resource lan
 
 ## Pipeline Architecture
 
+![OCR Pipeline](/readme-resources/ocr-pipeline.png)
+
 ### 1. Pre-Processing
 
 - Denoising, binarization, and contrast enhancement
