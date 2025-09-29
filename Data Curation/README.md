@@ -1,28 +1,15 @@
- ### Downloading and Reproducibility Links Coming within 24 hours.
-
-
-Data Curation
-
-Curation Pipeline overiview:
-Diagram comes here
-
-Explanation of the curation steps
-
-PT Chckpt link from teh Param 1 PT hugging face
-
-Training Data COmposition: 
-1. W/o curated: link to download 
-2. w curated: link to download
-
-Curation Scripts and code bases
-Steps to run the code base
-
-
+ ### Downloading and Reproducibility Links Coming within 24 hours
+ 
 ---
 
 # Data Curation
 
 This section describes our **curation pipeline** and the **ablation experiment** conducted to measure its effectiveness.
+
+---
+### Curation Pipeline
+
+![Curation Pipeline](./readme-resources/data-curation.png)
 
 ---
 
