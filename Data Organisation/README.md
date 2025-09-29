@@ -129,18 +129,22 @@ AI Training Pipelines
 
 ## Taxonomy Structure
 
-Government
-Legal
-Law
-Agriculture
-Constitution
-Patent
-Food Recipes
-Multilingual
-Religion
-Medical
-Defence
-International Affairs
+```
+taxonomy/
+ ├── Government/
+ ├── Legal/
+ ├── Law/
+ ├── Agriculture/
+ ├── Constitution/
+ ├── Patent/
+ ├── Food_Recipes/
+ ├── Multilingual/
+ ├── Religion/
+ ├── Medical/
+ ├── Defence/
+ └── International_Affairs/
+
+```
 
 ### Coverage
 
