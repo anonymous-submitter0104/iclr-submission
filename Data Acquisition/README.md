@@ -60,19 +60,20 @@ We aggregate large-scale corpora from **multi-source web crawling**, **curated o
 ## Folder Structure
 
 experiments/
-├── data_acquisition/
-│ ├── configs/
-│ │ └── schema.yaml
-│ ├── scripts/
-│ │ ├── download_books.sh
-│ │ ├── download_ndli.sh
-│ │ ├── download_hf.sh
-│ │ └── catalog_items.py
-│ ├── notebooks/
-│ │ └── distribution_analysis.ipynb
-│ └── README.md
-├── data_curation/
-└── pretraining/
+ ├── data_acquisition/
+ │    ├── configs/
+ │    │    └── schema.yaml
+ │    ├── scripts/
+ │    │    ├── download_books.sh
+ │    │    ├── download_ndli.sh
+ │    │    ├── download_hf.sh
+ │    │    └── catalog_items.py
+ │    ├── notebooks/
+ │    │    └── distribution_analysis.ipynb
+ │    └── README.md
+ ├── data_curation/
+ └── pretraining/
+
 
 ---
 
