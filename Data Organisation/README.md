@@ -22,6 +22,8 @@ Without rigorous governance, this diversity degrades reproducibility, fairness, 
 
 ### Our Solution
 
+![Data Org Pipeline](/readme-resources/data-governance-pipeline.png)
+
 A governance-first AI data lakehouse unifying storage, lineage, metadata, governance, and versioning at petabyte scale, complemented by a **1,400+ domain taxonomy** providing consistent structure and coverage across tasks.
 
 ---
