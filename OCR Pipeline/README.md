@@ -1,7 +1,6 @@
  ### Downloading and Reproducibility Links Coming within 24 hours.
 
 ---
-
 # Indic OCR Pipeline
 
 > A robust multi-stage pipeline for optical character recognition of low-resource Indian languages, designed to handle complex scripts and degraded documents.
@@ -111,10 +110,31 @@ Traditional metrics are insufficient post-enhancement. Our framework includes:
 - BLEU, ROUGE, CHRF++ for translation-level evaluation
 - Image embedding validation for reconstructed pages
 
+### Experimental Results
+
+#### Without Preprocessing and Postprocessing
+
+| Model | Bhashini CER | Bhashini WER | Bhashini PI-WER | Bhashini Char3-gram F1 | Mozhi CER | Mozhi WER | Mozhi PI-WER | Mozhi Char3-gram F1 |
+|-------|--------------|--------------|-----------------|------------------------|-----------|-----------|--------------|---------------------|
+| Llama-4-Scout-17B-16E-Instruct | 0.259 | 0.445 | 0.398 | 0.672 | 4.35 | 1.38 | 0.619 | 0.31 |
+| NuMarkdown-8B-Thinking | 0.361 | 0.537 | 0.508 | 0.556 | 53.31 | 9.21 | 0.677 | 0.168 |
+| Llama-4-Maverick-17B-128E-Instruct | 0.4 | 0.58 | 0.418 | 0.645 | 12 | 4 | 0.72 | 0.22 |
+| Qwen2.5-VL-72B-Instruct | 0.676 | 0.847 | 0.45 | 0.613 | 18.22 | 4.16 | 0.677 | 0.266 |
+
+#### With Preprocessing and Postprocessing
+
+| Model | CER | WER | PI-WER | Char3-gram F1 | ISOB-Small WER (22 Languages, 110 Pages) |
+|-------|-----|-----|--------|---------------|------------------------------------------|
+| dots.OCR | 0.168 | 0.253 | 0.23 | 0.801 | 0.8616 |
+| dots.OCR - postcorrected | 0.085 | 0.145 | 0.12 | 0.91 | 0.8214 |
+| Surya | 0.2 | 0.28 | 0.138 | 0.867 | 0.8982 |
+| Surya - postcorrected | 0.095 | 0.16 | 0.11 | 0.925 | 0.8774 |
+
 ### Key Findings
 
 - VLMs provide coverage but hallucinate in Indic scripts
 - Specialist OCR models outperform after preprocessing + postcorrection
+- Postcorrection improves CER by ~50% and WER by ~40% on average
 - Pretraining on processed OCR text yields smoother convergence vs. raw OCR
 
 ---
