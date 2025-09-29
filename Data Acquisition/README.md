@@ -53,3 +53,42 @@ We aggregate large-scale corpora from **multi-source web crawling**, **curated o
 ## Steps to Reproduce
 
  To Add Code Steps Here
+
+ ## Folder Structure
+
+```
+experiments/
+ ├── data_acquisition/
+ │    ├── configs/
+ │    │    └── schema.yaml
+ │    ├── scripts/
+ │    │    ├── download_books.sh
+ │    │    ├── download_ndli.sh
+ │    │    ├── download_hf.sh
+ │    │    └── catalog_items.py
+ │    ├── notebooks/
+ │    │    └── distribution_analysis.ipynb
+ │    └── README.md
+ ├── data_curation/
+ └── pretraining/
+```
+
+---
+
+## Observations
+
+The dataset statistics across different languages are summarized below:
+
+| **Language** | **# PDFs** | **# Pages** | **Word Count** |
+|--------------|-----------:|------------:|---------------:|
+| Hindi        | 396.12 K  | 7.53 M  | 4.15 B |
+| Marathi      | 124.22 K  | 3.02 M  | 1.26 B |
+| Malayalam    | 65.03 K   | 2.18 M  | 1.06 B |
+| Telugu       | 77.86 K   | 5.93 M  | 1.53 B |
+| Tamil        | 43.59 K   | 5.28 M  | 1.44 B |
+| Kannada      | 41.71 K   | 4.08 M  | 1.01 B |
+| Sanskrit     | 44.49 K   | 10.09 M | 2.68 B |
+| Bengali      | 41.25 K   | 10.95 M | 3.10 B |
+| Urdu         | 126.03 K  | 32.15 M | 10.03 B |
+| English      | 45.10 K   | 2.57 M  | 0.89 B |
+| **Total**    | **1 M**   | **84.00 M** | **27.15 B** |
