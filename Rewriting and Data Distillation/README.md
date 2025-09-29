@@ -263,7 +263,12 @@ experiments/
 ## Experimental Results
 
 ### SFT Recipe Comparison
+We compare off the shelf SFT Datasets Mixture with our In-house Synthetically augmented Data Mixture using the above paradigms, and below we present the abltaion results:
+Training Recipie: Param 1 SFT
+Data set Open Composition: , Donwload Link:
+Data set In house Composition: , Donwload Link:
 
+Model 
 | Task | Metric | Open Source SFT | In-house SFT Recipe |
 |------|--------|-----------------|---------------------|
 | hellaswag | acc_norm | 70.47 | **73.07** |
