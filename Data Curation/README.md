@@ -7,6 +7,27 @@
 This section describes our **curation pipeline** and the **ablation experiment** conducted to measure its effectiveness.
 
 ---
+
+## Folder Structure
+
+```
+iclr-submission/
+ ├── data_curation/
+ │    ├── curation/
+ │    │    ├── curator.py
+ │    ├── deduplication/
+ │    │    ├── deduplication.py
+ │    │    └── deduplication.sh
+ │    ├── toxic_filter/
+ │    │    ├── sample_toxic_words.txt
+ │    │    ├── toxic_filter_inference.py
+ │    │    └── toxic_filter_rule.py
+ │    ├── quality_filter/
+ │    │    ├── quality_filter.py
+ │    └── README.md
+```
+---
+
 ### Curation Pipeline
 
 ![Curation Pipeline](/readme-resources/data-curation.png)
@@ -81,10 +102,10 @@ All scripts are provided under [`experiments/data_curation/`](experiments/data_c
 
 ### Key Components
 
-* `configs/curator.yaml` → Pipeline configuration file (deduplication, filtering thresholds, LID models, etc.)
-* `scripts/run_curator.sh` → End-to-end script to process raw corpus into curated corpus
-* `scripts/download_raw.sh` → Helper script to fetch raw corpus shards (English + Hindi)
-* `notebooks/quality_checks.ipynb` → Post-curation quality analysis notebook
+* `curation/curator.py` → Curation Pipeline (Cleaning, Heuristic Filters, Redact PII etc.)
+* `deduplication/deduplciation.sh` → Bash file for global deduplication
+* `quality_filter/quality_filter.py` → Quality Filter (Low, Medium, High)
+* `toxic_filter/toxic_filter_rule.py` → Rule Based Toxic Filtering (word list included for 1 language)
 
 ---
 
@@ -124,27 +145,6 @@ All scripts are provided under [`experiments/data_curation/`](experiments/data_c
    * Training scripts are provided under [`experiments/pretraining/`](experiments/pretraining/).
 
 ---
-
-## Folder Structure
-
-```
-iclr-submission/
- ├── data_curation/
- │    ├── curation/
- │    │    ├── curator.py
- │    ├── deduplication/
- │    │    ├── deduplication.py
- │    │    └── deduplication.sh
- │    ├── toxic_filter/
- │    │    ├── sample_toxic_words.txt
- │    │    ├── toxic_filter_inference.py
- │    │    └── toxic_filter_rule.py
- │    ├── quality_filter/
- │    │    ├── quality_filter.py
- │    └── README.md
-```
----
-
 
 ### Results Obtained
 
