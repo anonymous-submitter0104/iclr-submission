@@ -9,19 +9,11 @@ _A DATASET FOR EQUITABLE MULTILINGUAL LLMS_
 
 Accompanying the Open review Submission [24079_MILA_MULTILINGUAL_INDIC_.pdf](https://github.com/anonymous-submitter0104/iclr-submission/blob/8308c89a777334fbeedba203fbb400c464961c60/24079_MILA_MULTILINGUAL_INDIC_.pdf) 
 
-Accompanying Open Source Data Release: [Open Source Data Release](https://github.com/anonymous-submitter0104/iclr-submission/tree/30e6f7b585eeb2df510abffc3256ec9613f98a50/Open%20Source%20Release)
-
 Long Technical Report Link: 
 
-### Disclaimer
+### Open Source Release
 
-This repository is part of a research effort submitted to ICLR. 
-
-Our objective is to open-source large-scale **Indian multilingual datasets** with the aim of strengthening the open-source AI ecosystem and fostering sovereignty within the Indic AI community. Importantly, all our pipelines are built exclusively on **open-source models available on Hugging Face**. No closed-source LLMs, VLMs, or proprietary AI systems are used at any stage.
-
-We intend to release not only the datasets but also the **data preparation recipes** and the accompanying open-source code. By doing so, we hope to enable the community to reproduce, extend, and innovate upon our methods in a fully transparent and sovereign manner.
-
-The planned open release will include:
+**We will Open Source the following:**
 
 * **2T tokens** of high-quality pretraining data
 * **300M image–text pairs** (spanning Indian languages, enabling Indic OCR and VLM development)
@@ -33,7 +25,17 @@ The planned open release will include:
 * **Crawling and Scraping Pipelines**
 * **First of its Kind Synthetic OCR Benchmark ISOB**
 
-All releases will be hosted on Hugging Face after the review process, in compliance with open-source best practices.
+_All releases will be hosted on Hugging Face after the review process with a accompanying license, in compliance with open-source best practices._
+
+### Disclaimer
+
+This repository is part of a research effort submitted to ICLR. 
+
+Our objective is to open-source large-scale **Indian multilingual datasets** with the aim of strengthening the open-source AI ecosystem and fostering sovereignty within the Indic AI community. Importantly, all our pipelines are built exclusively on **open-source models available on Hugging Face**. No closed-source LLMs, VLMs, or proprietary AI systems are used at any stage.
+
+We intend to release not only the datasets but also the **data preparation recipes** and the accompanying open-source code. By doing so, we hope to enable the community to reproduce, extend, and innovate upon our methods in a fully transparent and sovereign manner.
+
+
 
 
 
