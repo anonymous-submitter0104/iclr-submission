@@ -30,14 +30,12 @@ iclr-submission/
 
 ### Curation Pipeline
 
-![Curation Pipeline](/readme-resources/data-curation.png)
-
 ---
 
 ## Curation Pipeline Overview
 
 **Pipeline Diagram**
-*(Figure will be inserted here in the final camera-ready — e.g., an end-to-end curation workflow illustration)*
+![Curation Pipeline](/readme-resources/data-curation.png)
 
 **Description of Stages**
 
