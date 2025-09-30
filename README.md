@@ -31,6 +31,7 @@ The planned open release will include:
 * **Domain-specific Indian taxonomies**
 * **High-quality web-crawled English**
 * **Crawling and Scraping Pipelines**
+* **First of its Kind Synthetic OCR Benchmark ISOB**
 
 All releases will be hosted on Hugging Face after the review process, in compliance with open-source best practices.
 
