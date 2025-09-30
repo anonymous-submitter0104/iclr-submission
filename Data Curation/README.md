@@ -134,7 +134,7 @@ iclr-submission/
  │    ├── deduplication/
  │    │    ├── deduplication.py
  │    │    └── deduplication.sh
- │    ├── toxic_filtering/
+ │    ├── toxic_filter/
  │    │    ├── toxic_filter_inference.py
  │    │    └── toxic_filter_rule.py
  │    ├── quality_filter.py
