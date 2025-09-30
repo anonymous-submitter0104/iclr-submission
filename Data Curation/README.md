@@ -146,13 +146,18 @@ All scripts are provided under [`experiments/data_curation/`](experiments/data_c
 
 ### Results Obtained
 
-### Benchmark Results: Conventional vs Curated
+### Conventional vs Curated Data Sample
+
+![Curation Sample](/readme-resources/curation.png)
+
+### Ablation Experiment 1: Benchmark Results: Conventional vs Curated
 
 | **Model**      | **ARC Challenge** | **ARC Easy** | **Hella Swag** | **Hella Swag Hi** | **MMLU** | **MMLU Hi** |
 |----------------|------------------:|--------------:|----------------:|------------------:|---------:|------------:|
 | Conventional   | 46.5              | 73.6          | 73.5            | 28.9              | 41.3     | 26.2        |
 | Curated        | 53.6              | 74.2          | 73.8            | 41.4              | 46.2     | 34.6        |
 
+###
 
 ### Observation of the Resutls
 
