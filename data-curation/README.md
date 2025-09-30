@@ -14,7 +14,10 @@ This section describes our **curation pipeline** and the **ablation experiment**
 iclr-submission/
  ├── data_curation/
  │    ├── curation/
- │    │    ├── curator.py
+ │    │    ├── cc_curator.py
+ │    │    ├── language_detector.py
+ │    │    ├── nemo_curator.py
+ │    │    ├── streaming_regex.py
  │    ├── deduplication/
  │    │    ├── deduplication.py
  │    │    └── deduplication.sh
