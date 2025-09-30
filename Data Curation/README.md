@@ -96,7 +96,7 @@ Both datasets are matched in size (**2T tokens**) to ensure comparability.
 
 ## Curation Scripts and Codebase
 
-All scripts are provided under [`iclr-submission/data_curation/`](experiments/data_curation/).
+All scripts are provided under [`iclr-submission/Data_Curation/`](experiments/data_curation/).
 
 ### Key Components
 
