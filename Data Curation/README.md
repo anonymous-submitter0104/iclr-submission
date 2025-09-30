@@ -157,7 +157,9 @@ All scripts are provided under [`experiments/data_curation/`](experiments/data_c
 | Conventional   | 46.5              | 73.6          | 73.5            | 28.9              | 41.3     | 26.2        |
 | Curated        | 53.6              | 74.2          | 73.8            | 41.4              | 46.2     | 34.6        |
 
-###
+### Ablation Experiment 2: Toxicity Comparison
+
+![Toxicity Sample](/readme-resources/toxic-comparison.png)
 
 ### Observation of the Resutls
 
