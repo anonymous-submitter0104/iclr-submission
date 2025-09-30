@@ -130,7 +130,8 @@ All scripts are provided under [`experiments/data_curation/`](experiments/data_c
 ```
 iclr-submission/
  ├── data_curation/
- │    ├── curator.py
+ │    ├── curation/
+ │    │    ├── curator.py
  │    ├── deduplication/
  │    │    ├── deduplication.py
  │    │    └── deduplication.sh
@@ -138,7 +139,8 @@ iclr-submission/
  │    │    ├── sample_toxic_words.txt
  │    │    ├── toxic_filter_inference.py
  │    │    └── toxic_filter_rule.py
- │    ├── quality_filter.py
+ │    ├── quality_filter/
+ │    │    ├── quality_filter.py
  │    └── README.md
 ```
 
