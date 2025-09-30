@@ -146,12 +146,13 @@ All scripts are provided under [`iclr-submission/Data_Curation/`](experiments/da
 
 ### Results Obtained
 
+### Ablation Experiment 1: Benchmark Results: Conventional vs Curated
+
 ### Conventional vs Curated Data Sample
 
 ![Curation Sample](/readme-resources/curation.png)
 
-### Ablation Experiment 1: Benchmark Results: Conventional vs Curated
-
+### Benchmark Table
 | **Model**      | **ARC Challenge** | **ARC Easy** | **Hella Swag** | **Hella Swag Hi** | **MMLU** | **MMLU Hi** |
 |----------------|------------------:|--------------:|----------------:|------------------:|---------:|------------:|
 | Conventional   | 46.5              | 73.6          | 73.5            | 28.9              | 41.3     | 26.2        |
