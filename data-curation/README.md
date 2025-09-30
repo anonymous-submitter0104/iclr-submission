@@ -159,7 +159,7 @@ All scripts are provided under [`iclr-submission/Data_Curation/`](experiments/da
 
 ### Ablation Experiment 2: Toxicity Comparison
 
-![Toxicity Sample](/readme-resources/toxic-comparison.png)
+![Toxicity Sample](/readme-resources/toxic-comparison)
 
 ### Observation of the Resutls
 
