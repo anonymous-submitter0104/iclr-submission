@@ -2,7 +2,7 @@
 
  ### Downloading and Reproducibility Links Coming within 24 hours.
 
- ![Dataset Distribution](/readme-resources/token-distribution.png)
+ ![Dataset Distribution](/readme-resources/token_distribution.png)
 
 _A DATASET FOR EQUITABLE MULTILINGUAL LLMS_
 
