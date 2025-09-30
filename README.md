@@ -15,15 +15,15 @@ Long Technical Report Link:
 
 **We will Open Source the following:**
 
-* **2T tokens** of high-quality pretraining data
+* **2T tokens** of high-quality pretraining data across **22 Scheduled Indian Languages**
 * **300M image–text pairs** (spanning Indian languages, enabling Indic OCR and VLM development)
 * **Indic Persona Hub (200M Indian virtual personas)**
-* **India-centric parallel translated corpora**
+* **India-centric parallel translated corpora** across **22 Scheduled Indian Languages**
 * **Indic MMLU** benchmark covering 22 languages
 * **Domain-specific Indian taxonomies**
 * **High-quality web-crawled English**
 * **Crawling and Scraping Pipelines**
-* **First of its Kind Synthetic OCR Benchmark ISOB**
+* **First of its Kind Synthetic OCR Benchmark ISOB** across **22 Schedules Indian Languages**
 
 _All releases will be hosted on Hugging Face after the review process with a accompanying license, in compliance with open-source best practices._
 
