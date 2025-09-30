@@ -128,21 +128,17 @@ All scripts are provided under [`experiments/data_curation/`](experiments/data_c
 ## Folder Structure
 
 ```
-experiments/
+iclr-submission/
  ├── data_curation/
- │    ├── configs/
- │    │    └── curator.yaml
- │    ├── scripts/
- │    │    ├── run_curator.sh
- │    │    ├── download_raw.sh
- │    ├── notebooks/
- │    │    └── quality_checks.ipynb
+ │    ├── curator.py
+ │    ├── deduplication/
+ │    │    ├── deduplication.py
+ │    │    └── deduplication.sh
+ │    ├── toxic_filtering/
+ │    │    ├── toxic_filter_inference.py
+ │    │    └── toxic_filter_rule.py
+ │    ├── quality_filter.py
  │    └── README.md
- ├── pretraining/
- │    ├── train_curated.sh
- │    ├── train_noncurated.sh
- │    └── configs/
- │         └── param_ablation.yaml
 ```
 
 ---
