@@ -24,8 +24,8 @@ We intend to release not only the datasets but also the **data preparation recip
 The planned open release will include:
 
 * **2T tokens** of high-quality pretraining data
-* **3M image–text pairs** (spanning Indian languages, enabling Indic OCR and VLM development)
-* **Indic Persona Hub** (~200M Indian virtual personas)
+* **300M image–text pairs** (spanning Indian languages, enabling Indic OCR and VLM development)
+* **Indic Persona Hub (200M Indian virtual personas)**
 * **India-centric parallel translated corpora**
 * **Indic MMLU** benchmark covering 22 languages
 * **Domain-specific Indian taxonomies**
