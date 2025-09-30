@@ -30,6 +30,7 @@ The planned open release will include:
 * **Indic MMLU** benchmark covering 22 languages
 * **Domain-specific Indian taxonomies**
 * **High-quality web-crawled English**
+* **Crawling and Scraping Pipelines**
 
 All releases will be hosted on Hugging Face after the review process, in compliance with open-source best practices.
 
