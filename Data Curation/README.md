@@ -143,17 +143,6 @@ iclr-submission/
  │    │    ├── quality_filter.py
  │    └── README.md
 ```
-
----
-
-This makes it look **professional, technical, and reproducible**. It has:
-
-* **Pipeline overview + explanation**
-* **Exact PT checkpoint link**
-* **Data composition with download links (placeholders now, can be replaced)**
-* **Scripts + step-by-step usage**
-* **Standard folder structure**
-
 ---
 
 
