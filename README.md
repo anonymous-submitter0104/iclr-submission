@@ -1,7 +1,7 @@
 # MILA: MULTILINGUAL INDIC LANGUAGE ARCHIVE
 
  ### Downloading and Reproducibility Links Coming within 24 hours.
- _A smaller representative dataset has been uploaded in this repository. On acceptance of the paper, the full dataset will be released with proper legal licensing_
+ _A smaller representative dataset has been uploaded in this repository. On acceptance of the paper, the full dataset will be released with proper legal licensing._
 
  ![Dataset Distribution](/readme-resources/token_distribution.png)
 
