@@ -83,9 +83,9 @@ Detailed reproduction instructions are provided in each module's documentation a
 Data Acquisation/
  ├── Archive/                    # Archive.org pipeline
  │    ├── run_pipeline.py       # Complete automated pipeline
- │    ├── 1_extract_metadata.py # API-based metadata extraction
- │    ├── 2_build_url.py        # Download URL generation
- │    ├── 3_download_pdf.py     # Concurrent PDF downloading
+ │    ├── extract_metadata.py # API-based metadata extraction
+ │    ├── build_url.py        # Download URL generation
+ │    ├── download_pdf.py     # Concurrent PDF downloading
  │    ├── setup_check.py        # Configuration validation
  │    ├── get_metadata.py       # API helper functions
  │    ├── CONFIG_TEMPLATE.md    # Configuration examples
@@ -119,9 +119,9 @@ Data Acquisation/
 
 **Core Files:**
 - `run_pipeline.py` - Complete automated pipeline runner
-- `1_extract_metadata.py` - API-based metadata extraction
-- `2_build_url.py` - Download URL generation
-- `3_download_pdf.py` - Concurrent PDF downloading
+- `extract_metadata.py` - API-based metadata extraction
+- `build_url.py` - Download URL generation
+- `download_pdf.py` - Concurrent PDF downloading
 - `setup_check.py` - Configuration validation
 - `get_metadata.py` - API helper functions library
 
@@ -177,9 +177,9 @@ python setup_check.py          # Validate configuration
 python run_pipeline.py         # Run complete pipeline
 
 # Manual step-by-step
-python 1_extract_metadata.py   # Extract metadata
-python 2_build_url.py          # Build download URLs  
-python 3_download_pdf.py       # Download PDFs
+python extract_metadata.py   # Extract metadata
+python build_url.py          # Build download URLs  
+python download_pdf.py       # Download PDFs
 ```
 
 ### Web Scrapers
