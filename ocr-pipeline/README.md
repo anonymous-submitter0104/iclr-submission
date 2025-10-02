@@ -298,3 +298,4 @@ Traditional metrics are insufficient post-enhancement. Our framework includes:
 
 ## Ablation Experiment: Vanilla OCR vs OCR + Post Correction
 
+![ocr-pipeline/assets/val-loss-ocr.png](https://github.com/anonymous-submitter0104/iclr-submission/blob/4c0a6bc594ecffba99fb2f1678dfad379360c6bd/ocr-pipeline/assets/val-loss-ocr.png)
