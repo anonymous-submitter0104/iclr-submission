@@ -2,9 +2,6 @@
 
 This module provides comprehensive data organisation capabilities for managing large-scale document collections, specifically designed for LLM training data preparation. It handles both metadata ingestion into DataHub and file uploads to distributed storage systems.
 
-Perfect, thanks for sharing the full README 🙌
-Here’s a **Table of Contents** for your *Data Organisation Module* README, styled exactly like the one we prepared earlier for *Data Curation*:
-
 ---
 
 # Table of Contents
