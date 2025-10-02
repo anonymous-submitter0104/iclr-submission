@@ -1,3 +1,55 @@
+
+# Table of Contents
+
+* [Web Crawlers & Scrapers](#web-crawlers--scrapers)
+
+  * [🎯 Overview](#-overview)
+  * [📁 Scrapers Collection](#-scrapers-collection)
+
+    * [🔧 GeeksforGeeks Scraper (`gfg_scraper.py`)](#-geeksforgeeks-scraper-gfg_scraperpy)
+    * [🌐 Common Crawl WARC Extractor (`common_crawl_url_warc_to_text.py`)](#-common-crawl-warc-extractor-common_crawl_url_warc_to_textpy)
+    * [📚 NDLI High School Scraper (`ndli_highschool.py`)](#-ndli-high-school-scraper-ndli_highschoolpy)
+    * [🧮 AIME Mathematics Scraper (`aimim.py`)](#-aime-mathematics-scraper-aimimpy)
+    * [📚 Gadhkosh Literature Scraper (`gadhkosh.py`)](#-gadhkosh-literature-scraper-gadhkoshpy)
+    * [🏛️ IRADAI Research Scraper (`iradai.py`)](#-iradai-research-scraper-iradaipy)
+    * [💼 SEBI Financial Document Scraper (`sebi/scrp.py`)](#-sebi-financial-document-scraper-sebiscrppy)
+  * [🚀 Usage & Configuration](#-usage--configuration)
+
+    * [Basic Usage](#basic-usage)
+    * [Advanced Configuration](#advanced-configuration)
+
+      * [Environment Setup](#environment-setup)
+      * [Common Crawl Configuration](#common-crawl-configuration)
+      * [Scrapy Settings](#scrapy-settings)
+  * [🔍 Quality Assurance Features](#-quality-assurance-features)
+
+    * [Content Validation](#content-validation)
+    * [Error Handling](#error-handling)
+    * [Ethical Scraping](#ethical-scraping)
+  * [📊 Performance Metrics](#-performance-metrics)
+
+    * [Processing Capabilities](#processing-capabilities)
+    * [Quality Benchmarks](#quality-benchmarks)
+  * [🔄 Integration with Data Pipeline](#-integration-with-data-pipeline)
+
+    * [Upstream Integration](#upstream-integration)
+    * [Output Standardization](#output-standardization)
+    * [Downstream Processing](#downstream-processing)
+  * [🛠️ Technical Architecture](#️-technical-architecture)
+
+    * [Async Processing (Common Crawl)](#async-processing-common-crawl)
+    * [Scrapy Integration (NDLI, AIME)](#scrapy-integration-ndli-aime)
+    * [Content Processing Pipeline](#content-processing-pipeline)
+  * [📚 Dependencies](#-dependencies)
+
+    * [Core Libraries](#core-libraries)
+    * [System Requirements](#system-requirements)
+  * [🔮 Future Enhancements](#-future-enhancements)
+
+    * [Planned Features](#planned-features)
+    * [Performance Improvements](#performance-improvements)
+   
+
 # Web Crawlers & Scrapers
 
 Advanced collection of specialized web scrapers designed for high-quality educational and technical content extraction. These scrapers are optimized for LLM training data collection with built-in quality filtering, language detection, and content structuring capabilities.
@@ -373,10 +425,5 @@ warcio>=1.7.0
 - **Pipeline Optimization**: Streamlined processing workflows
 
 ---
-
-**Module**: Data Acquisition Crawlers  
-**Purpose**: High-quality educational and technical content extraction  
-**Status**: Production Ready  
-**Last Updated**: September 30, 2025
 
 For detailed usage examples and troubleshooting, see the individual scraper files and main Data Acquisition documentation.
