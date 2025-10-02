@@ -4,42 +4,79 @@
 A rigorously prepared, multi-language adaptation of the CAIS/MMLU test set, translated and enhanced for **22 Indic languages**, designed to evaluate open-source LLMs’ real-world ability to understand Indian languages.
 We additionally conducted large-scale **evaluation on 16 of these Indic languages (plus English)**, producing detailed accuracy reports and per-language visualizations.
 
-# What makes this Indic MMLU unique?
-While there have been previous efforts to translate MMLU into Indian languages, none have released their underlying methodology. Indic MMLU is the first benchmark to provide an **open recipe, open code, and translations across 22 Indian languages**, making it fully transparent and reproducible.
-
 ---
 
 # Table of Contents
 
-* [Indic MMLU — Benchmarking Open-Source LLMs on Indian Languages](#indic-mmlu--benchmarking-open-source-llms-on-indian-languages)
-
-  * [Why this dataset exists](#why-this-dataset-exists)
-  * [Coverage](#coverage)
-  * [Overview](#overview)
-  * [Key principles applied](#key-principles-applied)
-  * [High-level pipeline (what we did)](#high-level-pipeline-what-we-did)
-  * [Flowchart Representation of the Indic MMLU Pipeline](#flowchart-representation-of-the-indic-mmlu-pipeline)
-  * [Translation Algorithm](#translation-algorithm)
-  * [Reproducible commands (examples)](#reproducible-commands-examples)
-
-    * [Translate](#translate)
-    * [Enhance translations (LLM-based)](#enhance-translations-llm-based)
-    * [Generate embeddings](#generate-embeddings)
-    * [Cosine similarity (English vs translated enhancements)](#cosine-similarity-english-vs-translated-enhancements)
-    * [Linguist / teacher rating (LLM assisted orchestration)](#linguist--teacher-rating-llm-assisted-orchestration)
-    * [Model evaluation with lm-eval](#model-evaluation-with-lm-eval)
-  * [Summary of LLM-as-Judge Ratings](#summary-of-llm-as-judge-ratings)
-  * [Cosine similarity](#cosine-similarity)
-  * [Model Evaluation Methodology](#model-evaluation-methodology)
-  * [Important Note](#important-note)
-  * [Indic MMLU Results](#indic-mmlu-results)
-  * [How to reproduce (quick checklist)](#how-to-reproduce-quick-checklist)
-  * [Best practices & caveats](#best-practices--caveats)
-  * [Visual assets & tables](#visual-assets--tables)
+1. [Overview](#overview)
+2. [Why the Need for Indic MMLU](#why-the-need-for-indic-mmlu)
+   - [Data Distillation for Indian Languages](#data-distillation-for-indian-languages)
+   - [The Role of Indic MMLU](#the-role-of-indic-mmlu)
+3. [What This Dataset Has on Offer](#what-this-dataset-has-on-offer)
+4. [Coverage](#coverage)
+5. [High-Level Pipeline](#high-level-pipeline-what-we-did)
+   - [Flowchart Representation of the Indic MMLU Pipeline](#flowchart-representation-of-the-indic-mmlu-pipeline)
+6. [Translation Algorithm](#translation-algorithm)
+7. [Reproducible Commands](#reproducible-commands-examples)
+   - [Translate](#translate)
+   - [Enhance Translations (LLM-based)](#enhance-translations-llm-based)
+   - [Generate Embeddings](#generate-embeddings)
+   - [Cosine Similarity](#cosine-similarity-english-vs-translated-enhancements)
+   - [Linguist / Teacher Rating](#linguist--teacher-rating-llm-assisted-orchestration)
+   - [Model Evaluation with `lm-eval`](#model-evaluation-with-lm-eval)
+8. [Summary of LLM-as-Judge Ratings](#summary-of-llm-as-judge-ratings)
+9. [Cosine Similarity](#cosine-similarity)
+10. [Model Evaluation Methodology](#model-evaluation-methodology)
+11. [Important Note](#important-note)
+12. [Indic MMLU Results](#indic-mmlu-results)
+13. [How to Reproduce (Quick Checklist)](#how-to-reproduce-quick-checklist)
+14. [Best Practices & Caveats](#best-practices--caveats)
+15. [Visual Assets & Tables](#visual-assets--tables)
 
 ---
 
-## Why this dataset exists
+## Why the Need for Indic MMLU
+
+The rise of large language models (LLMs) has enabled advanced **synthetic data generation**, including:
+
+* Building LLM-based frameworks for **data curation and sandboxing**
+* Generating reasoning and coding examples in non-English languages
+* Creating SFT datasets, as well as off-policy datasets for **RLHF, DPO, GRPO**-style training
+
+To fully leverage these capabilities for Indian languages, we need LLMs with at least **limited native proficiency** in these languages. Such models allow us to generate high-quality, culturally-aligned datasets, create virtual personas to introduce nuanced constructs, and maintain **full control and flexibility** over the synthetic data pipeline.
+
+### Data Distillation for Indian Languages
+
+Data distillation provides a practical approach to achieve this:
+
+* **Easier and cleaner access to world knowledge** from state-of-the-art LLMs
+* **Domain control and flexibility** to shape datasets according to cultural and linguistic requirements
+* Embedding **strong Indian values** into datasets more effectively than via custom pipelines
+* Creating safety datasets that mitigate **anti-Indian stances** and promote positive responses
+
+**Distillation** is the process of generating data from large models to produce **task-specific, high-quality, and culturally-aligned datasets**. Using distillation, we can apply various synthetic data augmentation strategies, such as:
+
+* Chain-of-Thought (CoT) reasoning
+* Multi-turn conversational setups for richer data
+* Summaries and diverse QA pairs
+* Incorporation of strong Indian values through **virtual Indian personas**
+* Other augmentations, including translations and language-specific refinements
+
+### The Role of Indic MMLU
+
+Before deploying LLMs for such Indian-language data generation, we first need to **evaluate their cross-lingual knowledge transfer capabilities**. Indic MMLU serves this purpose by providing a benchmark to test how well models understand Indian languages, rather than merely translating English content.
+
+While previous efforts have translated MMLU into Indian languages, none have **released their methodology**. Indic MMLU is the first benchmark to provide:
+
+* **Open recipe and open code** for translations
+* Coverage of **22 Indian languages**
+* A fully transparent and **reproducible evaluation setup**
+
+This ensures that models can be assessed rigorously for genuine Indian-language understanding, forming a **foundation for culturally-aware synthetic data pipelines** in future research.
+
+---
+
+## What this dataset has on offer
 
 Large language models are often benchmarked only on English datasets, which leaves open the question of whether they can *actually* understand Indian languages beyond surface-level translation.
 
