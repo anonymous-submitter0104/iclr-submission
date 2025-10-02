@@ -1,5 +1,3 @@
----
-
 # Data Curation
 
 This section describes our **curation pipeline** and the **ablation experiment** conducted to measure its effectiveness.
