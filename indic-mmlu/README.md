@@ -13,7 +13,6 @@ While there have been previous efforts to translate MMLU into Indian languages, 
 
 * [Indic MMLU — Benchmarking Open-Source LLMs on Indian Languages](#indic-mmlu--benchmarking-open-source-llms-on-indian-languages)
 
-  * [What makes Indic MMLU unique?](#what-makes-indic-mmlu-unique?)
   * [Why this dataset exists](#why-this-dataset-exists)
   * [Coverage](#coverage)
   * [Overview](#overview)
