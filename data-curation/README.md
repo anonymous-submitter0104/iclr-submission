@@ -56,6 +56,41 @@ iclr-submission/
    * High-quality, domain-diverse corpus passed to training
 
 ---
+## Evaluation Procedure
+Here’s a polished and professional **“Evaluation Overview”** section you can put in your GitHub repo, right before the experiment details:
+
+---
+
+## Evaluation Overview
+
+To rigorously assess the impact of our **curation pipeline**, we conducted a controlled evaluation comparing models trained on **conventional datasets** versus **curated datasets**.
+
+**Purpose:**
+The evaluation aims to quantify the benefit of data curation on model performance across multiple reasoning and knowledge benchmarks, isolating the effect of data quality from scale.
+
+**Benchmarks Used:**
+We selected widely recognized benchmarks to capture diverse aspects of LLM capabilities:
+
+* **[ARC Challenge & ARC Easy](https://huggingface.co/datasets/allenai/ai2_arc)** – reasoning-focused multiple-choice questions. 
+* **[HellaSwag (English & Hindi)](https://huggingface.co/datasets/Rowan/hellaswag)** – commonsense reasoning and next-event prediction.
+* **[MMLU (English & Hindi)](https://huggingface.co/datasets/cais/mmlu)** – multitask knowledge evaluation across academic and professional subjects.
+
+**Evaluation Strategy:**
+
+* Models were trained using a **pre-trained 2.9B parameter checkpoint (Param-1 PT1)**, with extended continual pretraining on 2T tokens under both conventional and curated data conditions.
+* Both datasets were **matched in size (2T tokens)** to ensure that performance differences reflect the effect of curation rather than data volume.
+* Performance was evaluated using standard benchmark metrics to measure gains in reasoning, multilingual understanding, and robustness.
+
+**Key Expectations:**
+We anticipate that models trained on curated datasets will demonstrate:
+
+1. Higher accuracy across all benchmarks.
+2. Improved performance on **low-resource and multilingual settings** (e.g., Hindi variants).
+3. Reduced propagation of low-quality, toxic, or redundant content, contributing to safer and more reliable outputs.
+
+This evaluation framework establishes a **clear, reproducible methodology** for testing the efficacy of data curation, providing actionable insights for both ongoing model development and future dataset construction.
+
+---
 
 ### Ablation Experiment 1: To Check the efficacy of the Curation Pipeline. 
 
