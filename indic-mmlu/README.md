@@ -14,7 +14,7 @@ We additionally conducted large-scale **evaluation on 16 of these Indic language
 3. [What This Dataset Has on Offer](#what-this-dataset-has-on-offer)
 4. [Coverage](#coverage)
 5. [High-Level Pipeline](#high-level-pipeline-what-we-did)
-   - [Flowchart Representation of the Indic MMLU Pipeline](#flowchart-representation-of-the-indic-mmlu-pipeline)
+   - [Indic MMLU Pipeline Construction Algorithm](#indic-mmlu-pipeline-construction-algorithm)
 6. [Translation Algorithm](#translation-algorithm)
 7. [Reproducible Commands](#reproducible-commands-examples)
    - [Translate](#translate)
@@ -127,7 +127,7 @@ This separation ensures the dataset is **broad and inclusive**, while evaluation
 
 ---
 
-## Indic MMLU Pipeline Construction Pipeline
+## Indic MMLU Pipeline Construction Algorithm
 
 To complement the pseudo-code, the following flowchart provides a **visual overview of the Indic MMLU pipeline**. It clearly illustrates the step-by-step workflow, starting from the English MMLU dataset and moving through translation, enhancement, evaluation, and validation:
 
