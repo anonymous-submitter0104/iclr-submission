@@ -57,7 +57,7 @@ iclr-submission/
 
 ---
 
-## Evaluation Overview
+## Evaluation Procedure
 
 To rigorously assess the impact of our **curation pipeline**, we conducted a controlled evaluation comparing models trained on **conventional datasets** versus **curated datasets**.
 
