@@ -6,32 +6,7 @@ This section describes our **curation pipeline** and the **ablation experiment**
 
 # Table of Contents
 
-1. [Data Curation](#data-curation)
-   
-   * [Folder Structure](#folder-structure)
-   * [Curation Pipeline Overview](#curation-pipeline-overview)
-   * [Pipeline Diagram](#pipeline-diagram)
-   * [Description of Stages](#description-of-stages)
-3. [Evaluation Procedure](#evaluation-procedure)
 
-   * [Benchmarks Used](#benchmarks-used)
-   * [Evaluation Strategy](#evaluation-strategy)
-   * [Key Expectations](#key-expectations)
-4. [Ablation Experiment 1: Evaluating the Efficacy of the Curation Pipeline](#ablation-experiment-1-evaluating-the-efficacy-of-the-curation-pipeline)
-
-   * [Model Details](#model-details)
-   * [Training Data Composition](#training-data-composition)
-   * [Key Design Considerations](#key-design-considerations)
-   * [Experiment Replication Procedure](#experiment-replication-procedure)
-   * [Results Obtained: Conventional vs Curated](#results-obtained-conventional-vs-curated)
-   * [Observations](#observations)
-   * [Conclusion](#conclusion)
-5. [Ablation Experiment 2: Toxicity Evaluation](#ablation-experiment-2-toxicity-evaluation)
-
-   * [Key Findings](#key-findings)
-   * [Broader Implications](#broader-implications)
-   * [Conclusion](#conclusion-1)
-6. [Conventional vs Curated Data Sample](#conventional-vs-curated-data-sample)
 
 ---
 
@@ -59,10 +34,10 @@ iclr-submission/
 
 ## Curation Pipeline Overview
 
-**Pipeline Diagram**
+### Pipeline Diagram
 ![Curation Pipeline](/readme-resources/data-curation.png)
 
-**Description of Stages**
+### Description of Stages
 
 1. **Raw Corpus Construction**
 
@@ -91,20 +66,20 @@ To rigorously assess the impact of our **curation pipeline**, we conducted a con
 **Purpose:**
 The evaluation aims to quantify the benefit of data curation on model performance across multiple reasoning and knowledge benchmarks, isolating the effect of data quality from scale.
 
-**Benchmarks Used:**
+### Benchmarks Used:
 We selected widely recognized benchmarks to capture diverse aspects of LLM capabilities:
 
 * **[ARC Challenge & ARC Easy](https://huggingface.co/datasets/allenai/ai2_arc)** – reasoning-focused multiple-choice questions. 
 * **[HellaSwag (English & Hindi)](https://huggingface.co/datasets/Rowan/hellaswag)** – commonsense reasoning and next-event prediction.
 * **[MMLU (English & Hindi)](https://huggingface.co/datasets/cais/mmlu)** – multitask knowledge evaluation across academic and professional subjects.
 
-**Evaluation Strategy:**
+### Evaluation Strategy:
 
 * For this experiment, we selected the [Param-1](https://huggingface.co/bharatgenai/Param-1) pre-trained checkpoint, trained on 5T tokens, as our baseline due to its bilingual capabilities, making it well-suited for our evaluation. We then performed extended continual pretraining on this model using 2T tokens, drawn from the DCLM corpus, with 30% of the data translated into Hindi, under both conventional and curated data conditions.
 * Both datasets were **matched in size (2T tokens)** to ensure that performance differences reflect the effect of curation rather than data volume.
 * Performance was evaluated using standard benchmark metrics to measure gains in reasoning, multilingual understanding, and robustness.
 
-**Key Expectations:**
+### Key Expectations:
 We anticipate that models trained on curated datasets will demonstrate:
 
 1. Higher accuracy across all benchmarks.
@@ -245,6 +220,7 @@ The ablation experiment demonstrates that **data curation has a measurable, posi
 
 ## Ablation Experiment 2: Toxicity Evaluation
 
+### Objective 
 To evaluate the effect of data curation on model safety, we tested the **Param-1 model** after **extended continual pretraining on 2T curated tokens**. The pretraining used the curated dataset derived from the DCLM corpus (with 30% Hindi translations) to ensure bilingual coverage. This checkpoint reflects the combined effect of high-quality curated data and instruction tuning.
 
 We assessed toxicity using the **Toxigen** benchmark within the **LLM360 Safety360** suite. This framework measures both **explicit and implicit toxic outputs** through adversarial prompts across identity-based and general categories. The objective of this experiment is to quantify the **effectiveness of toxicity mitigation** in Param-1 relative to other models of similar scale.
