@@ -25,6 +25,7 @@ This section describes our **curation pipeline** and the **ablation experiment**
    3. [Broader Implications](#broader-implications)
    4. [Conclusion](#conclusion-1)
 6. [Conventional vs Curated Data Sample](#conventional-vs-curated-data-sample)
+   1. [Observation](#observation)
 
 
 
