@@ -1,4 +1,8 @@
+# Data Acquisition
 
+This section outlines our **data acquisition strategy**, describing the **sources, collection methodology, and filtering criteria** used to build the initial corpus. It also highlights the rationale behind selecting specific datasets, ensuring both **diversity** and **relevance** to downstream tasks.
+
+---
 # Table of Contents
 
 * [Web Crawlers & Scrapers](#web-crawlers--scrapers)
