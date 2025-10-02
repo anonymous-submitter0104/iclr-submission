@@ -278,9 +278,6 @@ Traditional metrics are insufficient post-enhancement. Our framework includes:
 </table>
 
 
-
-
-
 #### With Preprocessing and Postprocessing
 
 
@@ -298,3 +295,6 @@ Traditional metrics are insufficient post-enhancement. Our framework includes:
 - Specialist OCR models outperform after preprocessing + postcorrection
 - Postcorrection improves CER by ~50% and WER by ~40% on average
 - Pretraining on processed OCR text yields smoother convergence vs. raw OCR
+
+## Ablation Experiment: Vanilla OCR vs OCR + Post Correction
+
