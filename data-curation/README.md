@@ -56,10 +56,6 @@ iclr-submission/
    * High-quality, domain-diverse corpus passed to training
 
 ---
-## Evaluation Procedure
-Here’s a polished and professional **“Evaluation Overview”** section you can put in your GitHub repo, right before the experiment details:
-
----
 
 ## Evaluation Overview
 
