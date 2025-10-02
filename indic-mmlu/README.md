@@ -5,7 +5,7 @@ A rigorously prepared, multi-language adaptation of the CAIS/MMLU test set, tran
 We additionally conducted large-scale **evaluation on 16 of these Indic languages (plus English)**, producing detailed accuracy reports and per-language visualizations.
 
 # What makes this Indic MMLU unique?
-While there have been previous efforts to translate MMLU into Indian languages, none have released their underlying methodology. Indic MMLU is the first benchmark to provide an open recipe, open code, and translations across 22 Indian languages, making it fully transparent and reproducible.
+While there have been previous efforts to translate MMLU into Indian languages, none have released their underlying methodology. Indic MMLU is the first benchmark to provide an **open recipe, open code, and translations across 22 Indian languages**, making it fully transparent and reproducible.
 
 ---
 
