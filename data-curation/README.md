@@ -212,13 +212,27 @@ The ablation experiment demonstrates that **data curation has a measurable, posi
 * **Bilingual and low-resource performance benefits the most**, underlining the importance of careful curation for multilingual corpora.
 * These results validate the **NeMo curation pipeline** as an effective tool for improving downstream LLM performance, providing strong justification for its adoption in future model training.
 
-### Ablation Experiment 2: Toxicity Comparison
+## Ablation Experiment 2: Toxicity Evaluation
+
+To evaluate the effect of data curation on model safety, we tested the **Param-1 model** after **extended continual pretraining on 2T curated tokens**. The pretraining used the curated dataset derived from the DCLM corpus (with 30% Hindi translations) to ensure bilingual coverage. This checkpoint reflects the combined effect of high-quality curated data and instruction tuning.
+
+We assessed toxicity using the **Toxigen** benchmark within the **LLM360 Safety360** suite. This framework measures both **explicit and implicit toxic outputs** through adversarial prompts across identity-based and general categories. The objective of this experiment is to quantify the **effectiveness of toxicity mitigation** in Param-1 relative to other models of similar scale.
 
 ![Toxicity Sample](/readme-resources/toxic-comparison)
 
-### Observation of the Resutls
+### Key Findings
 
-We observe that after performing curation increase in the score on the various benhcmarks are obtained.
+* **Lower or Comparable Toxicity:** Param-1 consistently exhibits **lower or comparable toxicity rates** relative to other multilingual baselines.
+* **Qualitative Behavior:** The model avoids generating stereotype-amplifying content, producing **neutral, helpful, and culturally respectful responses**, particularly in sensitive scenarios.
+* **Impact of Curation Pipeline:** These results validate the effectiveness of our **curation and instruction-tuning pipeline**, which explicitly targets safe, high-quality content in both English and Hindi.
+
+### Broader Implications
+
+Our evaluation shows that Param-1 maintains **strong and consistent performance** across linguistic, reasoning, and culturally grounded tasks. By testing on both standard English benchmarks and **culturally adapted Hindi and multilingual datasets**, we provide a **robust assessment of the model’s generalization and domain-specific capabilities**.
+
+### Conclusion
+
+These results demonstrate that **extended continual pretraining on curated data improves both safety and performance**, establishing Param-1 as a **competitive, culturally aware foundation model** suitable for diverse real-world applications.
 
 ---
 ## Conventional vs Curated Data Sample
