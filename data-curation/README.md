@@ -29,10 +29,6 @@ iclr-submission/
 ```
 ---
 
-### Curation Pipeline
-
----
-
 ## Curation Pipeline Overview
 
 **Pipeline Diagram**
