@@ -91,10 +91,10 @@ This evaluation framework establishes a **clear, reproducible methodology** for 
 For this ablation study, we selected a **pre-trained checkpoint of an open-source LLM, [Param-1](https://huggingface.co/bharatgenai/Param-1)**, a **2.9B-parameter bilingual model** supporting English and Hindi. This checkpoint was trained on **5T tokens**, providing a strong multilingual baseline for our evaluation.
 
 > *Based on our internal experimentation, we empirically observe scaling effects consistent across small, medium, and large model regimes*
-> [Chowdhery et al., 2020](https://ar5iv.labs.arxiv.org/html/2001.08361),
-> [Smith et al., 2024](https://arxiv.org/abs/2403.06563),
-> [Lee et al., 2024](https://arxiv.org/html/2412.01505),
-> [EmergentMind, 2024](https://www.emergentmind.com/papers/2403.08540)
+> [Scaling Laws for Neural Language Models](https://ar5iv.labs.arxiv.org/html/2001.08361),
+> [Unraveling the Mystery of Scaling Laws: Part I](https://arxiv.org/abs/2403.06563),
+> [Scaling Law for Language Models Training Considering Batch Size](https://arxiv.org/html/2412.01505),
+> [Language models scale reliably with over-training and on downstream tasks](https://www.emergentmind.com/papers/2403.08540)
 
 **Model Details:**
 
