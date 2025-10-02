@@ -264,4 +264,11 @@ These results demonstrate that **extended continual pretraining on curated data 
 
 ---
 ## Conventional vs Curated Data Sample
+
+The Following is an example of a Assamese Text Pre-Curation and Post-Curation:
 ![Curation Sample](/readme-resources/curation.png)
+
+### Observation
+
+After the curation process, the dataset was significantly cleaned and standardized to improve model training. All HTML and markup tags such as `<div>`, `<br>`, `<i>`, `<b>`, and `<span>` were removed, leaving only readable text, while extraneous punctuation and repeated special symbols like `**`, `%%`, and `!!` were eliminated to produce more natural sentences. Redundant or repeated phrases were merged or removed to reduce overfitting, and line breaks or formatting artifacts were smoothed to ensure coherent, continuous sentences. Non-linguistic metadata, including authorship markers, instructional notes, or bracketed annotations, was stripped to focus solely on meaningful content. Token normalization was applied to unify encoding, spacing, punctuation, and Unicode scripts, minimizing inconsistencies across multilingual text. Additionally, potential toxic or inappropriate content was filtered to ensure safer and culturally neutral data. Overall, these curation steps enhanced the quality, readability, and consistency of the corpus, making it more suitable for downstream model training.
+
