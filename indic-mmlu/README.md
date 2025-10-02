@@ -127,7 +127,7 @@ This separation ensures the dataset is **broad and inclusive**, while evaluation
 
 ---
 
-## Flowchart Representation of the Indic MMLU Pipeline
+## Indic MMLU Pipeline Construction Pipeline
 
 To complement the pseudo-code, the following flowchart provides a **visual overview of the Indic MMLU pipeline**. It clearly illustrates the step-by-step workflow, starting from the English MMLU dataset and moving through translation, enhancement, evaluation, and validation:
 
