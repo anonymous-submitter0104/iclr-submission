@@ -3,32 +3,43 @@
 This section describes our **curation pipeline** and the **ablation experiment** conducted to measure its effectiveness.
 
 ---
+
 # Table of Contents
 
-1. [Folder Structure](#folder-structure)
-2. [Curation Pipeline Overview](#curation-pipeline-overview)
-   1. [Pipeline Diagram](#pipeline-diagram)
-   2. [Description of Stages](#description-of-stages)
-3. [Evaluation Procedure](#evaluation-procedure)
-   1. [Benchmarks Used](#benchmarks-used)
-   2. [Evaluation Strategy](#evaluation-strategy)
-   3. [Key Expectations](#key-expectations)
-4. [Ablation Experiment 1: Evaluating the Efficacy of the Curation Pipeline](#ablation-experiment-1-evaluating-the-efficacy-of-the-curation-pipeline)
-   1. [Model Details](#model-details)
-   2. [Training Data Composition](#training-data-composition)
-   3. [Key Design Considerations](#key-design-considerations)
-   4. [Experiment Replication Procedure](#experiment-replication-procedure)
-   5. [Results Obtained: Conventional vs Curated](#results-obtained-conventional-vs-curated)
-5. [Ablation Experiment 2: Toxicity Evaluation](#ablation-experiment-2-toxicity-evaluation)
-   1. [Objective](#objective)
-   2. [Key Findings](#key-findings)
-   3. [Broader Implications](#broader-implications)
-   4. [Conclusion](#conclusion-1)
-6. [Conventional vs Curated Data Sample](#conventional-vs-curated-data-sample)
-   1. [Observation](#observation)
-
-
-
+1. [Overview](#data-curation)
+2. [Folder Structure](#folder-structure)
+3. [Curation Pipeline Overview](#curation-pipeline-overview)
+   - [Pipeline Diagram](#pipeline-diagram)
+   - [Description of Stages](#description-of-stages)
+     - [Raw Corpus Construction](#raw-corpus-construction)
+     - [Deduplication and Cleaning](#deduplication-and-cleaning)
+     - [Quality Filtering](#quality-filtering)
+     - [Indian Language Adaptation](#indian-language-adaptation)
+     - [Final Curated Dataset](#final-curated-dataset)
+4. [Evaluation Procedure](#evaluation-procedure)
+   - [Benchmarks Used](#benchmarks-used)
+   - [Evaluation Strategy](#evaluation-strategy)
+   - [Key Expectations](#key-expectations)
+5. [Ablation Experiment 1: Efficacy of the Curation Pipeline](#ablation-experiment-1-evaluating-the-efficacy-of-the-curation-pipeline)
+   - [Model Details](#model-details)
+   - [Training Data Composition](#training-data-composition)
+     - [Conventional Corpus (Uncurated)](#conventional-corpus-uncurated)
+     - [Curated Corpus (Curation Applied)](#curated-corpus-curation-applied)
+   - [Key Design Considerations](#key-design-considerations)
+   - [Experiment Replication Procedure](#experiment-replication-procedure)
+     - [Curation Scripts and Codebase](#curation-scripts-and-codebase)
+     - [Steps to Run](#steps-to-run)
+   - [Results Obtained: Conventional vs Curated](#results-obtained-conventional-vs-curated)
+     - [Benchmark Scores](#benchmark-scores)
+     - [Observations](#observations)
+   - [Conclusion](#conclusion)
+6. [Ablation Experiment 2: Toxicity Evaluation](#ablation-experiment-2-toxicity-evaluation)
+   - [Objective](#objective)
+   - [Key Findings](#key-findings)
+   - [Broader Implications](#broader-implications)
+   - [Conclusion](#conclusion-1)
+7. [Conventional vs Curated Data Sample](#conventional-vs-curated-data-sample)
+   - [Observation](#observation)
 
 ---
 
