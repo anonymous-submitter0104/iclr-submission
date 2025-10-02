@@ -63,45 +63,50 @@ iclr-submission/
 
 ---
 
-## Base Pretraining Checkpoint
+### Ablation Experiment 1: To Check the efficacy of the Curation Pipeline. 
 
-For Ablation study purposes we chose the 2.9B param range of model to test it on.
-Based on our internal experimentatin , we have empirically observed a scaling effect applicable from small models to typical medium sized and large size models.
+For Ablation study purposes we chose the a pre-trained checkpoint of an open source LLM, [Param-1 PT1](https://huggingface.co/bharatgenai/Param-1) which is a 2.9B parameter range-bilingual model. 
+
+_Based on our internal experimentation, we have empirically observed a scaling effect applicable from small models to typical medium sized and large size models._
 https://ar5iv.labs.arxiv.org/html/2001.08361
 https://arxiv.org/abs/2403.06563
 https://arxiv.org/html/2412.01505
 https://www.emergentmind.com/papers/2403.08540
 
-* **Model**: Param-1 PT (2.9B parameters)
+* **Model**: Param-1 Pre-Trained Ckpt (2.9B parameters)
 * **Checkpoint Source**: [Hugging Face: Param-1 PT1](https://huggingface.co/bharatgenai/Param-1)
 * **Training Recipe**: As described in [Param Paper](https://arxiv.org/pdf/2507.13390)
-* **Tokens Trained**: 5T (before this ablation experiment)
+* **Tokens Trained**: This model is a pretrained checkpoint with 5T tokens, and we perform extended continual pretraining on it with 2T tokens for ablation study.
 
 ---
 
 ## Training Data Composition
 
-We extended training with **2T tokens** under two conditions:
+For the extended training phase, we utilized **2T tokens** under two distinct conditions to enable a controlled comparison:
 
-1. **Without Curation** (Conventional Corpus)
+1. **Conventional Corpus (Without Curation)**
 
-   * Raw text with only basic preprocessing
-   * Download: `https://example.com/datasets/param_ablation/english_hindi_noncurated`
+   * Constructed directly from raw text with only minimal preprocessing applied.
+   * The 2T-token subset was sampled from the [DCLM](https://github.com/mlfoundations/dclm) corpus.
 
-2. **With Curation** (Curated Corpus via Pipeline)
+2. **Curated Corpus (With Curation)**
 
-   * Same sources passed through the NeMo Curator pipeline
-   * Download: `https://example.com/datasets/param_ablation/english_hindi_curated`
+   * Derived from the same underlying sources as the conventional corpus, but processed through the **NeMo Curator pipeline** for quality filtering and curation.
+   * A 2T-token subset was selected to match the conventional corpus in size.
 
-Both datasets are matched in size (**2T tokens**) to ensure comparability.
+Both datasets contain **exactly 2T tokens**, ensuring that any observed differences in model performance can be attributed to the effect of curation rather than scale.
 
 ---
+
+## Experiment Replication Procedure
+
+The complete set of scripts and codebase required to replicate this experiment will be provided below.
 
 ## Curation Scripts and Codebase
 
 All scripts are provided under [`iclr-submission/Data_Curation/`](experiments/data_curation/).
 
-### Key Components
+## Key Components
 
 * `curation/curator.py` → Curation Pipeline (Cleaning, Heuristic Filters, Redact PII etc.)
 * `deduplication/deduplciation.sh` → Bash file for global deduplication
@@ -147,11 +152,12 @@ All scripts are provided under [`iclr-submission/Data_Curation/`](experiments/da
 
 ---
 
-### Results Obtained
+### Results Obtained: Conventional vs Curated
 
-### Ablation Experiment 1: Benchmark Results: Conventional vs Curated
+## Evaluation Procedure
+We evaluated models trained on both conventional datasets (raw corpus with minimal preprocessing) and curated datasets (data refined with targeted filtering and quality improvements). The goal was to compare their performance across widely used benchmarks for LLM evaluation.
 
-### Conventional vs Curated Data Sample
+## Conventional vs Curated Data Sample
 
 ![Curation Sample](/readme-resources/curation.png)
 
