@@ -3,6 +3,7 @@
 > Ensemble-based translation and post-correction pipeline for 16 Indic languages — leveraging specialist MT models, high-performing Indic LLMs, and human validation.
 
 ---
+# Table of Contents
 
 1. [Overview](#overview)
 2. [Goals](#goals)
