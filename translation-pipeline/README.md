@@ -6,26 +6,26 @@
 
 ## Table of Contents
 
-1. **[Abstract](#abstract)**
-2. **[Goals](#goals)**
-3. **[Datasets](#datasets)**
-4. **[Translation Pipeline](#translation-pipeline)**
+1. [Abstract](#abstract)
+2. [Goals](#goals)
+3. [Datasets](#datasets)
+4. [Translation Pipeline](#translation-pipeline)
    4.1 [Step 1 — Source Data Selection](#step-1---source-data-selection)
    4.2 [Step 2 — Specialist Model Translation & Generalist Refinement](#step-2---specialist-model-translation--generalist-refinement)
    4.3 [Step 3 — LLM-as-Judge Semantic Consensus](#step-3---llm-as-judge-semantic-consensus)
    4.4 [Step 4 — Human Evaluation & Finalization](#step-4---human-evaluation--finalization)
    4.5 [Step 5 — Long-Context Translation](#step-5---long-context-translation)
-5. **[Evaluation Metrics](#evaluation-metrics)**
-6. **[Model Inventory](#model-inventory)**
-7. **[Reproducible Commands](#reproducible-commands)**
+5. [Evaluation Metrics](#evaluation-metrics)
+6. [Model Inventory](#model-inventory)
+7. [Reproducible Commands](#reproducible-commands)
    7.1 [IndicTrans2 Evaluation](#indictrans2-evaluation)
    7.2 [NLLB Batch Translation](#nllb-batch-translation)
    7.3 [Generalist LLM Refinement](#generalist-llm-refinement)
    7.4 [LLM-as-Judge Evaluation](#llm-as-judge-evaluation)
-8. **[Results](#results)**
+8. [Results](#results)
    8.1 [Baseline MT Results](#baseline-mt)
    8.2 [Post Enhancements on MT](#post-enhancements-on-mt)
-9. **[Key Insights & Best Practices](#key-insights--best-practices)**
+9. [Key Insights & Best Practices](#key-insights--best-practices)
 
 ---
 
