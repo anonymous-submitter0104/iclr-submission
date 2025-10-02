@@ -25,7 +25,6 @@ iclr-submission/
  │    │    ├── quality_filter.py
  │    └── README.md
 ```
----
 
 ## Curation Pipeline Overview
 
@@ -53,7 +52,6 @@ iclr-submission/
 
    * High-quality, domain-diverse corpus passed to training
 
----
 
 ## Evaluation Procedure
 
@@ -84,9 +82,8 @@ We anticipate that models trained on curated datasets will demonstrate:
 
 This evaluation framework establishes a **clear, reproducible methodology** for testing the efficacy of data curation, providing actionable insights for both ongoing model development and future dataset construction.
 
----
 
-### Ablation Experiment 1: Evaluating the Efficacy of the Curation Pipeline
+## Ablation Experiment 1: Evaluating the Efficacy of the Curation Pipeline
 
 For this ablation study, we selected a **pre-trained checkpoint of an open-source LLM, [Param-1](https://huggingface.co/bharatgenai/Param-1)**, a **2.9B-parameter bilingual model** supporting English and Hindi. This checkpoint was trained on **5T tokens**, providing a strong multilingual baseline for our evaluation.
 
@@ -96,14 +93,14 @@ For this ablation study, we selected a **pre-trained checkpoint of an open-sourc
 > [Scaling Law for Language Models Training Considering Batch Size](https://arxiv.org/html/2412.01505),
 > [Language models scale reliably with over-training and on downstream tasks](https://www.emergentmind.com/papers/2403.08540)
 
-**Model Details:**
+### Model Details:
 
 * **Model:** Param-1 Pre-trained Checkpoint (2.9B parameters)
-* **Checkpoint Source:** [Hugging Face: Param-1 PT1](https://huggingface.co/bharatgenai/Param-1)
+* **Checkpoint Source:** [Hugging Face: Param-1](https://huggingface.co/bharatgenai/Param-1)
 * **Training Recipe:** As described in the [Param Paper](https://arxiv.org/pdf/2507.13390)
 * **Pretraining Tokens:** Original pretraining: 5T tokens; extended continual pretraining for ablation: 2T tokens
 
-## Training Data Composition
+### Training Data Composition
 
 To systematically evaluate the effect of data curation, we conducted **extended continual pretraining** on 2T tokens under **two controlled conditions**:
 
@@ -125,32 +122,28 @@ To systematically evaluate the effect of data curation, we conducted **extended 
      * Quality scoring (low, medium, high)
    * A fully curated **2T-token subset** was selected, strictly matching the conventional corpus in size to isolate the effect of curation.
 
-**Key Design Considerations:**
+### Key Design Considerations:
 
 * Both datasets contain **exactly 2T tokens**, eliminating confounding effects of scale.
 * By maintaining identical token counts, any observed performance differences can be confidently attributed to **data quality and curation**.
 * Inclusion of **30% Hindi tokens** ensures that the evaluation captures bilingual performance, addressing potential reviewer concerns regarding language coverage.
 
----
-
-## Experiment Replication Procedure
+### Experiment Replication Procedure
 
 The complete set of scripts and codebase required to replicate this experiment will be provided below.
 
-## Curation Scripts and Codebase
+**Curation Scripts and Codebase**
 
 All scripts are provided under [`iclr-submission/Data_Curation/`](experiments/data_curation/).
 
-## Key Components
+**Key Components**
 
 * `curation/curator.py` → Curation Pipeline (Cleaning, Heuristic Filters, Redact PII etc.)
 * `deduplication/deduplciation.sh` → Bash file for global deduplication
 * `quality_filter/quality_filter.py` → Quality Filter (Low, Medium, High)
 * `toxic_filter/toxic_filter_rule.py` → Rule Based Toxic Filtering (word list included for 1 language)
 
----
-
-## Steps to Run
+**Steps to Run**
 
 1. **Setup Environment**
 
@@ -185,22 +178,39 @@ All scripts are provided under [`iclr-submission/Data_Curation/`](experiments/da
    * Curated and non-curated corpora are directly pluggable into the NeMo pretraining recipes.
    * Training scripts are provided under [`experiments/pretraining/`](experiments/pretraining/).
 
----
 
 ### Results Obtained: Conventional vs Curated
 
-## Evaluation Procedure
 We evaluated models trained on both conventional datasets (raw corpus with minimal preprocessing) and curated datasets (data refined with targeted filtering and quality improvements). The goal was to compare their performance across widely used benchmarks for LLM evaluation.
 
-## Conventional vs Curated Data Sample
+**Benchmark Scores**
 
-![Curation Sample](/readme-resources/curation.png)
-
-### Benchmark Table
 | **Model**      | **ARC Challenge** | **ARC Easy** | **Hella Swag** | **Hella Swag Hi** | **MMLU** | **MMLU Hi** |
 |----------------|------------------:|--------------:|----------------:|------------------:|---------:|------------:|
 | Conventional   | 46.5              | 73.6          | 73.5            | 28.9              | 41.3     | 26.2        |
 | Curated        | 53.6              | 74.2          | 73.8            | 41.4              | 46.2     | 34.6        |
+
+### Observations
+
+1. **Consistent Improvement Across Benchmarks:**
+   Models trained on the curated corpus outperform those trained on the conventional corpus across all evaluated benchmarks, demonstrating the positive impact of data curation.
+
+2. **Significant Gains in Low-Resource / Multilingual Settings:**
+   The largest relative improvements are observed in **HellaSwag Hi** (Hindi) and **MMLU Hi**, with scores increasing from 28.9 → 41.4 and 26.2 → 34.6, respectively. This highlights that curation is particularly beneficial for low-resource and non-English data.
+
+3. **Marginal Gains in High-Resource English Benchmarks:**
+   Improvements in ARC Challenge, ARC Easy, and HellaSwag (English) are smaller but consistent, indicating that curation enhances overall model quality, even for already high-quality data.
+
+4. **Effect of Quality Filtering:**
+   The gains suggest that removing low-quality, redundant, and toxic content through the curation pipeline allows the model to better utilize training tokens, improving generalization and robustness.
+
+### Conclusion
+
+The ablation experiment demonstrates that **data curation has a measurable, positive effect on LLM performance**:
+
+* **Curated datasets consistently outperform conventional datasets**, confirming that quality matters as much as quantity in large-scale pretraining.
+* **Bilingual and low-resource performance benefits the most**, underlining the importance of careful curation for multilingual corpora.
+* These results validate the **NeMo curation pipeline** as an effective tool for improving downstream LLM performance, providing strong justification for its adoption in future model training.
 
 ### Ablation Experiment 2: Toxicity Comparison
 
@@ -209,3 +219,7 @@ We evaluated models trained on both conventional datasets (raw corpus with minim
 ### Observation of the Resutls
 
 We observe that after performing curation increase in the score on the various benhcmarks are obtained.
+
+---
+## Conventional vs Curated Data Sample
+![Curation Sample](/readme-resources/curation.png)
