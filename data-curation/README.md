@@ -73,7 +73,7 @@ We selected widely recognized benchmarks to capture diverse aspects of LLM capab
 
 **Evaluation Strategy:**
 
-* For this experiment, we selected the [Param-1 PT1](https://huggingface.co/bharatgenai/Param-1) pre-trained checkpoint, trained on 5T tokens, as our baseline due to its bilingual capabilities, making it well-suited for our evaluation. We then performed extended continual pretraining on this model using 2T tokens, drawn from the DCLM corpus, with 30% of the data translated into Hindi, under both conventional and curated data conditions.
+* For this experiment, we selected the [Param-1](https://huggingface.co/bharatgenai/Param-1) pre-trained checkpoint, trained on 5T tokens, as our baseline due to its bilingual capabilities, making it well-suited for our evaluation. We then performed extended continual pretraining on this model using 2T tokens, drawn from the DCLM corpus, with 30% of the data translated into Hindi, under both conventional and curated data conditions.
 * Both datasets were **matched in size (2T tokens)** to ensure that performance differences reflect the effect of curation rather than data volume.
 * Performance was evaluated using standard benchmark metrics to measure gains in reasoning, multilingual understanding, and robustness.
 
