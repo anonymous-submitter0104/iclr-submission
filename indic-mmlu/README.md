@@ -1,6 +1,5 @@
 # Indic MMLU — Benchmarking Open-Source LLMs on Indian Languages
 
-**Short description:**
 A rigorously prepared, multi-language adaptation of the CAIS/MMLU test set, translated and enhanced for **22 Indic languages**, designed to evaluate open-source LLMs’ real-world ability to understand Indian languages.
 We additionally conducted large-scale **evaluation on 16 of these Indic languages (plus English)**, producing detailed accuracy reports and per-language visualizations.
 
