@@ -7,16 +7,17 @@ This section describes our **curation pipeline** and the **ablation experiment**
 # Table of Contents
 
 1. [Data Curation](#data-curation)
-   1.1 [Folder Structure](#folder-structure)
-   1.2 [Curation Pipeline Overview](#curation-pipeline-overview)
+   
+   * [Folder Structure](#folder-structure)
+   * [Curation Pipeline Overview](#curation-pipeline-overview)
    * [Pipeline Diagram](#pipeline-diagram)
    * [Description of Stages](#description-of-stages)
-2. [Evaluation Procedure](#evaluation-procedure)
+3. [Evaluation Procedure](#evaluation-procedure)
 
    * [Benchmarks Used](#benchmarks-used)
    * [Evaluation Strategy](#evaluation-strategy)
    * [Key Expectations](#key-expectations)
-3. [Ablation Experiment 1: Evaluating the Efficacy of the Curation Pipeline](#ablation-experiment-1-evaluating-the-efficacy-of-the-curation-pipeline)
+4. [Ablation Experiment 1: Evaluating the Efficacy of the Curation Pipeline](#ablation-experiment-1-evaluating-the-efficacy-of-the-curation-pipeline)
 
    * [Model Details](#model-details)
    * [Training Data Composition](#training-data-composition)
@@ -25,12 +26,12 @@ This section describes our **curation pipeline** and the **ablation experiment**
    * [Results Obtained: Conventional vs Curated](#results-obtained-conventional-vs-curated)
    * [Observations](#observations)
    * [Conclusion](#conclusion)
-4. [Ablation Experiment 2: Toxicity Evaluation](#ablation-experiment-2-toxicity-evaluation)
+5. [Ablation Experiment 2: Toxicity Evaluation](#ablation-experiment-2-toxicity-evaluation)
 
    * [Key Findings](#key-findings)
    * [Broader Implications](#broader-implications)
    * [Conclusion](#conclusion-1)
-5. [Conventional vs Curated Data Sample](#conventional-vs-curated-data-sample)
+6. [Conventional vs Curated Data Sample](#conventional-vs-curated-data-sample)
 
 ---
 
