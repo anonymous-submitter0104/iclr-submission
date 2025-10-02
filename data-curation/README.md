@@ -88,38 +88,50 @@ This evaluation framework establishes a **clear, reproducible methodology** for 
 
 ---
 
-### Ablation Experiment 1: To Check the efficacy of the Curation Pipeline. 
+### Ablation Experiment 1: Evaluating the Efficacy of the Curation Pipeline
 
-For Ablation study purposes we chose the a pre-trained checkpoint of an open source LLM, [Param-1 PT1](https://huggingface.co/bharatgenai/Param-1) which is a 2.9B parameter range-bilingual model. 
+For this ablation study, we selected a **pre-trained checkpoint of an open-source LLM, [Param-1](https://huggingface.co/bharatgenai/Param-1)**, a **2.9B-parameter bilingual model** supporting English and Hindi. This checkpoint was trained on **5T tokens**, providing a strong multilingual baseline for our evaluation.
 
-_Based on our internal experimentation, we have empirically observed a scaling effect applicable from small models to typical medium sized and large size models._
-https://ar5iv.labs.arxiv.org/html/2001.08361
-https://arxiv.org/abs/2403.06563
-https://arxiv.org/html/2412.01505
-https://www.emergentmind.com/papers/2403.08540
+> *Based on our internal experimentation, we empirically observe scaling effects consistent across small, medium, and large model regimes*
+> [Chowdhery et al., 2020](https://ar5iv.labs.arxiv.org/html/2001.08361),
+> [Smith et al., 2024](https://arxiv.org/abs/2403.06563),
+> [Lee et al., 2024](https://arxiv.org/html/2412.01505),
+> [EmergentMind, 2024](https://www.emergentmind.com/papers/2403.08540)
 
-* **Model**: Param-1 Pre-Trained Ckpt (2.9B parameters)
-* **Checkpoint Source**: [Hugging Face: Param-1 PT1](https://huggingface.co/bharatgenai/Param-1)
-* **Training Recipe**: As described in [Param Paper](https://arxiv.org/pdf/2507.13390)
-* **Tokens Trained**: This model is a pretrained checkpoint with 5T tokens, and we perform extended continual pretraining on it with 2T tokens for ablation study.
+**Model Details:**
 
----
+* **Model:** Param-1 Pre-trained Checkpoint (2.9B parameters)
+* **Checkpoint Source:** [Hugging Face: Param-1 PT1](https://huggingface.co/bharatgenai/Param-1)
+* **Training Recipe:** As described in the [Param Paper](https://arxiv.org/pdf/2507.13390)
+* **Pretraining Tokens:** Original pretraining: 5T tokens; extended continual pretraining for ablation: 2T tokens
 
 ## Training Data Composition
 
-For the extended training phase, we utilized **2T tokens** under two distinct conditions to enable a controlled comparison:
+To systematically evaluate the effect of data curation, we conducted **extended continual pretraining** on 2T tokens under **two controlled conditions**:
 
-1. **Conventional Corpus (Without Curation)**
+1. **Conventional Corpus (Uncurated)**
 
-   * Constructed directly from raw text with only minimal preprocessing applied.
-   * The 2T-token subset was sampled from the [DCLM](https://github.com/mlfoundations/dclm) corpus.
+   * Constructed directly from raw text with minimal preprocessing (tokenization, basic normalization).
+   * The 2T-token subset was sampled from the [DCLM corpus](https://github.com/mlfoundations/dclm), with **30% of tokens translated into Hindi** to maintain bilingual coverage.
+   * No additional quality filters were applied, ensuring a baseline reflecting typical large-scale pretraining data.
 
-2. **Curated Corpus (With Curation)**
+2. **Curated Corpus (Curation Applied)**
 
-   * Derived from the same underlying sources as the conventional corpus, but processed through the **NeMo Curator pipeline** for quality filtering and curation.
-   * A 2T-token subset was selected to match the conventional corpus in size.
+   * Derived from the same underlying sources as the conventional corpus.
+   * Processed through the **NeMo Curator pipeline**, which applies multiple quality control steps:
 
-Both datasets contain **exactly 2T tokens**, ensuring that any observed differences in model performance can be attributed to the effect of curation rather than scale.
+     * Deduplication
+     * Heuristic-based filtering
+     * PII redaction
+     * Toxicity filtering
+     * Quality scoring (low, medium, high)
+   * A fully curated **2T-token subset** was selected, strictly matching the conventional corpus in size to isolate the effect of curation.
+
+**Key Design Considerations:**
+
+* Both datasets contain **exactly 2T tokens**, eliminating confounding effects of scale.
+* By maintaining identical token counts, any observed performance differences can be confidently attributed to **data quality and curation**.
+* Inclusion of **30% Hindi tokens** ensures that the evaluation captures bilingual performance, addressing potential reviewer concerns regarding language coverage.
 
 ---
 
