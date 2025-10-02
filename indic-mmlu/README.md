@@ -6,6 +6,36 @@ We additionally conducted large-scale **evaluation on 16 of these Indic language
 
 ---
 
+# Table of Contents
+
+* [Indic MMLU — Benchmarking Open-Source LLMs on Indian Languages](#indic-mmlu--benchmarking-open-source-llms-on-indian-languages)
+
+  * [Why this dataset exists](#why-this-dataset-exists)
+  * [Coverage](#coverage)
+  * [Overview](#overview)
+  * [Key principles applied](#key-principles-applied)
+  * [High-level pipeline (what we did)](#high-level-pipeline-what-we-did)
+  * [Flowchart Representation of the Indic MMLU Pipeline](#flowchart-representation-of-the-indic-mmlu-pipeline)
+  * [Translation Algorithm](#translation-algorithm)
+  * [Reproducible commands (examples)](#reproducible-commands-examples)
+
+    * [Translate](#translate)
+    * [Enhance translations (LLM-based)](#enhance-translations-llm-based)
+    * [Generate embeddings](#generate-embeddings)
+    * [Cosine similarity (English vs translated enhancements)](#cosine-similarity-english-vs-translated-enhancements)
+    * [Linguist / teacher rating (LLM assisted orchestration)](#linguist--teacher-rating-llm-assisted-orchestration)
+    * [Model evaluation with lm-eval](#model-evaluation-with-lm-eval)
+  * [Summary of LLM-as-Judge Ratings](#summary-of-llm-as-judge-ratings)
+  * [Cosine similarity](#cosine-similarity)
+  * [Model Evaluation Methodology](#model-evaluation-methodology)
+  * [Important Note](#important-note)
+  * [Indic MMLU Results](#indic-mmlu-results)
+  * [How to reproduce (quick checklist)](#how-to-reproduce-quick-checklist)
+  * [Best practices & caveats](#best-practices--caveats)
+  * [Visual assets & tables](#visual-assets--tables)
+
+---
+
 ## Why this dataset exists
 
 Large language models are often benchmarked only on English datasets, which leaves open the question of whether they can *actually* understand Indian languages beyond surface-level translation.
