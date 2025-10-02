@@ -1,6 +1,64 @@
-# Data Organisation Module
+# Data Organisation 
 
 This module provides comprehensive data organisation capabilities for managing large-scale document collections, specifically designed for LLM training data preparation. It handles both metadata ingestion into DataHub and file uploads to distributed storage systems.
+
+Perfect, thanks for sharing the full README 🙌
+Here’s a **Table of Contents** for your *Data Organisation Module* README, styled exactly like the one we prepared earlier for *Data Curation*:
+
+---
+
+# Table of Contents
+
+* [Data Organisation Module](#data-organisation-module)
+
+  * [Overview](#overview)
+
+    * [Deployed Architecture: JuiceFS + DataHub Integration](#deployed-architecture-juicefs--datahub-integration)
+  * [Components](#components)
+
+    * [1. DataHub Metadata Ingestion (ingestionpy)](#1-datahub-metadata-ingestion-ingestionpy)
+
+      * [Key Features](#key-features)
+      * [Usage Example](#usage-example)
+      * [Data Structure Requirements](#data-structure-requirements)
+    * [2. JuiceFS Storage Management (ingestion_lakepy)](#2-juicefs-storage-management-ingestion_lakepy)
+
+      * [Key Features](#key-features-1)
+      * [Architecture](#architecture)
+      * [Usage Example](#usage-example-1)
+      * [File Organization Structure](#file-organization-structure)
+  * [Performance Optimizations](#performance-optimizations)
+
+    * [JuiceFS Uploader Optimizations](#juicefs-uploader-optimizations)
+    * [DataHub Ingestion Optimizations](#datahub-ingestion-optimizations)
+  * [Configuration](#configuration)
+
+    * [Environment Variables](#environment-variables)
+    * [DataHub Configuration](#datahub-configuration)
+  * [Logging](#logging)
+  * [Error Handling](#error-handling)
+  * [Data Discoverability Through JuiceFS + DataHub Deployment](#data-discoverability-through-juicefs--datahub-deployment)
+
+    * [How the Integration Works](#how-the-integration-works)
+    * [What This Module Provides](#what-this-module-provides)
+    * [Discovery Benefits for LLM Teams](#discovery-benefits-for-llm-teams)
+  * [Use Cases](#use-cases)
+
+    * [LLM Training Data Preparation](#llm-training-data-preparation)
+    * [Data Lake Management](#data-lake-management)
+  * [Dependencies](#dependencies)
+
+    * [Core Dependencies](#core-dependencies)
+    * [Installation](#installation)
+  * [Best Practices](#best-practices)
+  * [Deployment Integration Details](#deployment-integration-details)
+
+    * [JuiceFS Configuration](#juicefs-configuration)
+    * [DataHub Configuration](#datahub-configuration)
+    * [Integration Points](#integration-points)
+  * [Future Enhancements](#future-enhancements)
+
+---
 
 ## Overview
 
