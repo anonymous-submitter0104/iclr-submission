@@ -7,6 +7,9 @@ This document summarizes the experiments conducted to evaluate the effectiveness
 ## Experimental 1
 
 - **Base model:** [Qwen3-600M](https://huggingface.co/Qwen/Qwen3-0.6B)
+- **Docker Image:** nvcr.io/nvidia/nemo:25.07
+- **Number of GPUs:** 32 H100 (4 Nodes)
+- **Time Taken:** 8 Days  
 - **Training scripts:**
 - **Dataset:** Extended Pretraining on 210B Tokens spanning across 15 Languages, with roughly about 14B tokens per langauge, with uniform distribution
 - Assamese (As), Bengali (Bn), English (En), Gujarati (Gu), Hindi (Hi), Kannada (Kn), Malayalam (Ml), Marathi (Mr), Nepali (Ne), Odia (Or), Punjabi (Pa), Sanskrit (Sa), Sindhi (Sd), Tamil (Ta), Telugu (Te)
