@@ -4,11 +4,6 @@ A rigorously prepared, multi-language adaptation of the CAIS/MMLU test set, tran
 We additionally conducted large-scale **evaluation on 16 of these Indic languages (plus English)**, producing detailed accuracy reports and per-language visualizations.
 
 ---
-
-# Open Source Release 
-[Click here to view Release](https://github.com/anonymous-submitter0104/iclr-submission/tree/66bfdab3aa2f7b44bc3ccd67bf9b2ea7c3450d5f/opensource-release/Indic%20MMLU)
-
----
 # Table of Contents
 
 1. [Overview](#overview)
