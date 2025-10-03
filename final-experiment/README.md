@@ -73,16 +73,7 @@ This measures how fairly a model represents Indic languages relative to English.
 
 ## Baseline Comparisons
 
-For completeness, we also evaluate strong multilingual baselines:  
-
-- **mT5-XL (7B)**  
-- **BLOOMZ-7B**  
-- **LLaMA-2-7B**  
-- **Gemma-7B**  
-- **Mixtral-7B**  
-- **Granite-7B**  
-
-Results are provided in the indic mmlu folder.
+For completeness, we also evaluate strong multilingual baselines the results of which are provided in the Indic MMLU folder.
 
 ---
 
