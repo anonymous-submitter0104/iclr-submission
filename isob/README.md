@@ -4,6 +4,9 @@ Since a significant portion of our corpus originates from copyrighted materials 
 
 However, recognizing the complexity and challenges inherent in such offline digitized documents—and to support the research community—we are introducing the **first version of the Indian Synthetic OCR Benchmark – Small-Hard**.
 
+# Open Source Release 
+[Click here to view Release]()
+
 Future releases will expand to include:
 
 * **Indic-Real-OCR Benchmarks** (licensed for public release)
