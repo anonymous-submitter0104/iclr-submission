@@ -6,7 +6,7 @@ We additionally conducted large-scale **evaluation on 16 of these Indic language
 ---
 
 # Open Source Release 
-[Click here to view files](https://github.com/anonymous-submitter0104/iclr-submission/tree/ebd3accac49c6f0c4441ef5fd2691322e26da4d8/opensource-release/Indic%20MMLU)
+[Click here to view Release](https://github.com/anonymous-submitter0104/iclr-submission/tree/ebd3accac49c6f0c4441ef5fd2691322e26da4d8/opensource-release/Indic%20MMLU)
 
 ---
 # Table of Contents
