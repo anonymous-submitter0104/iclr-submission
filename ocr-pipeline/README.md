@@ -299,3 +299,59 @@ Traditional metrics are insufficient post-enhancement. Our framework includes:
 ## Ablation Experiment: Vanilla OCR vs OCR + Post Correction
 
 ![ocr-pipeline/assets/val-loss-ocr.png](https://github.com/anonymous-submitter0104/iclr-submission/blob/4c0a6bc594ecffba99fb2f1678dfad379360c6bd/ocr-pipeline/assets/val-loss-ocr.png)
+
+
+
+We demonstrate the practical impact of OCR quality on downstream model training through controlled experiments on a **310M parameter dense language model**. Two versions of the same corpus were compared:
+
+1. **Raw OCR output** with typical error rates around **15–20%**.  
+2. **Postprocessed OCR text** using our full correction pipeline.
+
+### Observations
+
+- **Raw OCR Data**:  
+  - Produced unstable loss curves with frequent spikes.  
+  - Showed irregular perplexity behavior and slow convergence.  
+  - Models struggled to learn coherent linguistic patterns.  
+  - High validation perplexity and poor downstream performance.
+
+- **Postprocessed OCR Data**:  
+  - Achieved smooth, monotonic loss reduction.  
+  - Stable perplexity curves, indicative of high-quality pretraining.  
+  - Substantially lower final perplexity.  
+  - Stronger performance on Indic language benchmarks.  
+
+These results show that **OCR preprocessing directly improves model capabilities**. For low-resource languages, where data scarcity is already a challenge, noisy OCR signals compound the disadvantage. Conversely, robust OCR pipelines and postprocessing amplify the value of scarce digitized resources, enabling smaller corpora to support stronger models.
+
+---
+
+### Model Architecture (310M Parameters)
+
+| **Attribute**                  | **Value**                       |
+|--------------------------------|---------------------------------|
+| Model Architecture             | causal language model           |
+| Hidden size                    | 768                             |
+| Intermediate size (FFN)        | 3108                            |
+| Max Position Embeddings        | 2048                            |
+| Num of Attention Heads         | 12                              |
+| Num of Hidden Layers           | 12                              |
+| Num of Query Groups            | 12                              |
+| Normalization                  | RMSNorm                         |
+| Activation Function            | swiglu                          |
+| Attention Type                 | Multi-head Attention            |
+| Position Embedding Type        | RoPE (rotary)                   |
+| Dropout (hidden/attn/ffn)      | 0.0 / 0.0 / 0.0                 |
+| Precision                      | bf16 (AMP O2)                   |
+
+---
+
+### Validation Loss Comparison
+
+![Validation loss comparison between models trained on conventional OCR output versus postcorrected text.](figures/validation_loss_plot_square_pastel.pdf)
+
+The postcorrected corpus produces **substantially more stable training dynamics** and **lower final perplexity**, demonstrating the direct impact of OCR quality on model performance.
+
+---
+
+The infrastructure and validation framework established here extends beyond MILA itself, providing **reusable tools** that support equitable language technology development across the world’s linguistic diversity.
+
