@@ -1,7 +1,7 @@
 include: _default_template_yaml
 dataset_path: json
 dataset_kwargs:
-  data_files: opensource-release/Indic MMLU/mmlu_in_kn.parquet
+  data_files: opensource-release/Indic MMLU/mmlu_kn_in.parquet
 test_split: train
 tag: mmlu_custom-core
 task: mmlu_custom_Kannada
