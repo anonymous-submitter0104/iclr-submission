@@ -22,14 +22,15 @@ We additionally conducted large-scale **evaluation on 16 of these Indic language
    - [Cosine Similarity](#cosine-similarity-english-vs-translated-enhancements)
    - [Linguist / Teacher Rating](#linguist--teacher-rating-llm-assisted-orchestration)
    - [Model Evaluation with `lm-eval`](#model-evaluation-with-lm-eval)
-8. [Summary of LLM-as-Judge Ratings](#summary-of-llm-as-judge-ratings)
-9. [Cosine Similarity](#cosine-similarity)
-10. [Model Evaluation Methodology](#model-evaluation-methodology)
-11. [Important Note](#important-note)
-12. [Indic MMLU Results](#indic-mmlu-results)
-13. [How to Reproduce (Quick Checklist)](#how-to-reproduce-quick-checklist)
-14. [Best Practices & Caveats](#best-practices--caveats)
-15. [Visual Assets & Tables](#visual-assets--tables)
+8. [Download Indic MMLU Dataset](#download-Indic-mmlu-dataset)
+9. [Summary of LLM-as-Judge Ratings](#summary-of-llm-as-judge-ratings)
+10. [Cosine Similarity](#cosine-similarity)
+11. [Model Evaluation Methodology](#model-evaluation-methodology)
+12. [Important Note](#important-note)
+13. [Indic MMLU Results](#indic-mmlu-results)
+14. [How to Reproduce (Quick Checklist)](#how-to-reproduce-quick-checklist)
+15. [Best Practices & Caveats](#best-practices--caveats)
+16. [Visual Assets & Tables](#visual-assets--tables)
 
 ---
 
@@ -180,15 +181,6 @@ This visual representation makes it easier to understand how the **algorithmic s
 
 ---
 
-## Download Indic MMLU Dataset
-
-The complete benchmark covering **22 Indic languages + English** is available here:  
-
-- [Download Full Benchmark (PARQUET)](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/opensource-release/Indic%20MMLU)
-
-> ⚠️ Please cite this repository if you use the dataset in your research.
----
-
 ## Reproducible commands (examples)
 
 > These are the canonical commands used in our pipeline. Replace file paths, ports, and concurrency values as appropriate for your environment.
@@ -258,6 +250,17 @@ python3 async_infr.py \
 # Example wrapper which runs evaluation for a model snapshot against the Indic MMLU dataset
 bash lm-eval-llm.sh /path/to/model_snapshot /benchmark-result-path
 ```
+
+---
+
+## Download Indic MMLU Dataset
+
+The complete benchmark covering **22 Indic languages + English** is available here:  
+
+- [Download Full Benchmark (PARQUET)](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/opensource-release/Indic%20MMLU)
+
+> ⚠️ Please cite this repository if you use the dataset in your research.
+
 
 ---
 
