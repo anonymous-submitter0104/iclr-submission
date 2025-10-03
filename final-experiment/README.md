@@ -41,10 +41,6 @@ This before/after comparison highlights the impact of MILA on reasoning and know
 
 We define **parity** as the ratio of a model’s MMLU score in a given Indic language to its score in English:
 
-\[
-\text{Parity}_L = \frac{\text{MMLU score in language } L}{\text{MMLU score in English}}
-\]
-
 ![equation](https://latex.codecogs.com/png.latex?\text{Parity}_L=\frac{\text{MMLU%20score%20in%20language%20}L}{\text{MMLU%20score%20in%20English}})
 
 
