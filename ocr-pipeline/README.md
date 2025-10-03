@@ -298,10 +298,6 @@ Traditional metrics are insufficient post-enhancement. Our framework includes:
 
 ## Ablation Experiment: Vanilla OCR vs OCR + Post Correction
 
-![ocr-pipeline/assets/val-loss-ocr.png](https://github.com/anonymous-submitter0104/iclr-submission/blob/4c0a6bc594ecffba99fb2f1678dfad379360c6bd/ocr-pipeline/assets/val-loss-ocr.png)
-
-
-
 We demonstrate the practical impact of OCR quality on downstream model training through controlled experiments on a **310M parameter dense language model**. Two versions of the same corpus were compared:
 
 1. **Raw OCR output** with typical error rates around **15–20%**.  
@@ -347,7 +343,8 @@ These results show that **OCR preprocessing directly improves model capabilities
 
 ### Validation Loss Comparison
 
-![Validation loss comparison between models trained on conventional OCR output versus postcorrected text.](figures/validation_loss_plot_square_pastel.pdf)
+![ocr-pipeline/assets/val-loss-ocr.png](https://github.com/anonymous-submitter0104/iclr-submission/blob/4c0a6bc594ecffba99fb2f1678dfad379360c6bd/ocr-pipeline/assets/val-loss-ocr.png)
+
 
 The postcorrected corpus produces **substantially more stable training dynamics** and **lower final perplexity**, demonstrating the direct impact of OCR quality on model performance.
 
