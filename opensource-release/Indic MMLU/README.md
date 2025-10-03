@@ -29,7 +29,9 @@ The data generation process encompasses the following steps:
 
 ## ⚙️ Usage Instructions
 # Example wrapper which runs evaluation for a model snapshot against the Indic MMLU dataset
-bash lm-eval-llm.sh /path/to/model_snapshot /benchmark-result-path
+```
+  bash lm-eval-llm.sh /path/to/model_snapshot /benchmark-result-path
+```
 
 
 
