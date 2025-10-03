@@ -180,6 +180,15 @@ This visual representation makes it easier to understand how the **algorithmic s
 
 ---
 
+## Download Indic MMLU Dataset
+
+The complete benchmark covering **22 Indic languages + English** is available here:  
+
+- [Download Full Benchmark (PARQUET)](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/opensource-release/Indic%20MMLU)
+
+> ⚠️ Please cite this repository if you use the dataset in your research.
+---
+
 ## Reproducible commands (examples)
 
 > These are the canonical commands used in our pipeline. Replace file paths, ports, and concurrency values as appropriate for your environment.
