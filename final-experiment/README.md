@@ -6,8 +6,8 @@ This document summarizes the experiments conducted to evaluate the effectiveness
 
 ## Experimental Setup
 
-- **Base model:** Qwen3-600M ([Qwen3](https://arxiv.org/abs/2409.xxxx))
-- **Task:** Indic MMLU ([MMLU](https://arxiv.org/abs/2009.03300))
+- **Base model:** [Qwen3-600M](https://huggingface.co/Qwen/Qwen3-0.6B)
+- **Evaluate the Performance Imprpovement on Indic MMLU:** Indic MMLU 
 - **Method:** 
   1. Measure Indic MMLU score on the pretrained Qwen3-600M checkpoint.
   2. Continually pretrain this checkpoint on **MILA**.
