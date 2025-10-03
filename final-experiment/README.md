@@ -84,7 +84,7 @@ For completeness, we also evaluate strong multilingual baselines:
 - **Mixtral-7B**  
 - **Granite-7B**  
 
-Results are provided in the appendix of the paper.
+Results are provided in the indic mmlu folder.
 
 ---
 
