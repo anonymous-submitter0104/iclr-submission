@@ -4,7 +4,7 @@ This document summarizes the experiments conducted to evaluate the effectiveness
 
 ---
 
-## Experimental 1
+# Experiment 1: Evaluating the Efficacy of the Multilingual Data
 
 - **Base model:** [Qwen3-600M](https://huggingface.co/Qwen/Qwen3-0.6B)
 - **Docker Image:** nvcr.io/nvidia/nemo:25.07
@@ -20,8 +20,6 @@ This document summarizes the experiments conducted to evaluate the effectiveness
   3. Re-evaluate Indic MMLU performance.
 
 This before/after comparison highlights the impact of MILA on reasoning and knowledge coverage for Indic languages.
-
----
 
 ## Model Architecture
 
@@ -50,11 +48,11 @@ This before/after comparison highlights the impact of MILA on reasoning and know
 | qwen3-600M-original   | 0.2965 | 0.3020 | 0.3678 | 0.2950 | 0.3190 | 0.2906 | 0.2933 | 0.3002 | 0.2968 | 0.2861 | 0.2951 | 0.2968 | 0.2802 | 0.2962 | 0.2987 | 0.3012    |
 | qwen3-600M-cpt        | 0.3190 | 0.3270 | 0.3720 | 0.3180 | 0.3420 | 0.3130 | 0.3170 | 0.3240 | 0.3200 | 0.3090 | 0.3190 | 0.3200 | 0.3040 | 0.3200 | 0.3220 | 0.3250    |
 
-**Observation:** Continual pretraining with MILA yields consistent gains across all Indic languages.
+### Observation:** Continual pretraining with MILA yields consistent gains across all Indic languages.
 
 ---
 
-## Experimetn 2: Fairness Metric: Indic Parity
+# Experiment 2: Fairness Metric: Indic Parity
 
 We define **parity** as the ratio of a model’s MMLU score in a given Indic language to its score in English:
 
@@ -63,23 +61,17 @@ We define **parity** as the ratio of a model’s MMLU score in a given Indic lan
 This measures how fairly a model represents Indic languages relative to English.
 
 
-### Indic Parity
+## Indic Parity
 
 | Model                | As    | Bn    | Gu    | Hi    | Kn    | Ml    | Mr    | Ne    | Or    | Pa    | Sa    | Sd    | Ta    | Te    | Avg-Indic |
 |-----------------------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-----------|
 | qwen3-600M-original   | 0.806 | 0.821 | 0.802 | 0.867 | 0.791 | 0.797 | 0.816 | 0.807 | 0.778 | 0.802 | 0.807 | 0.762 | 0.806 | 0.813 | 0.819     |
 | qwen3-600M-cpt        | 0.857 | 0.879 | 0.855 | 0.919 | 0.841 | 0.852 | 0.871 | 0.860 | 0.830 | 0.857 | 0.860 | 0.817 | 0.860 | 0.865 | 0.874     |
 
-**Observation:** Average Indic parity improves after continual pretraining, showing that MILA promotes more equitable representation across languages.
+## Observation: Average Indic parity improves after continual pretraining, showing that MILA promotes more equitable representation across languages.
 
 ---
 
-## Baseline Comparisons
-
-For completeness, we also evaluate strong multilingual baselines the results of which are provided in the Indic MMLU folder.
-
----
-
-## Conclusion
+# Conclusion
 
 MILA significantly improves both **absolute performance** and **fairness (Indic parity)** for Qwen3-600M. These results demonstrate that targeted continual pretraining on MILA leads to stronger and more equitable representation of Indic languages.
