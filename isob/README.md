@@ -5,7 +5,7 @@ Since a significant portion of our corpus originates from copyrighted materials 
 However, recognizing the complexity and challenges inherent in such offline digitized documents—and to support the research community—we are introducing the **first version of the Indian Synthetic OCR Benchmark – Small-Hard**.
 
 # Open Source Release 
-[Click here to view Release]()
+[Click here to view Release](https://github.com/anonymous-submitter0104/iclr-submission/tree/8e22a46c4d58a888b178e8d78820ae2e9bf45e94/opensource-release/isob-small-hard)
 
 Future releases will expand to include:
 
