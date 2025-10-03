@@ -4,9 +4,12 @@ This document summarizes the experiments conducted to evaluate the effectiveness
 
 ---
 
-## Experimental Setup
+## Experimental 1
 
 - **Base model:** [Qwen3-600M](https://huggingface.co/Qwen/Qwen3-0.6B)
+- **Training scripts:**
+- **Dataset:** Extended Pretraining on 210B Tokens spanning across 15 Languages, with roughly about 14B tokens per langauge, with uniform distribution
+- Assamese (As), Bengali (Bn), English (En), Gujarati (Gu), Hindi (Hi), Kannada (Kn), Malayalam (Ml), Marathi (Mr), Nepali (Ne), Odia (Or), Punjabi (Pa), Sanskrit (Sa), Sindhi (Sd), Tamil (Ta), Telugu (Te)
 - **Evaluate the Performance Imprpovement on Indic MMLU:** Indic MMLU 
 - **Method:** 
   1. Measure Indic MMLU score on the pretrained Qwen3-600M checkpoint.
@@ -35,19 +38,6 @@ This before/after comparison highlights the impact of MILA on reasoning and know
 | Dropout (hidden/attn/ffn)       | 0.0 / 0.0 / 0.0                           |
 | Precision                       | bf16 (mixed)                              |
 
----
-
-## Fairness Metric: Indic Parity
-
-We define **parity** as the ratio of a model’s MMLU score in a given Indic language to its score in English:
-
-![equation](https://latex.codecogs.com/png.latex?\text{Parity}_L=\frac{\text{MMLU%20score%20in%20language%20}L}{\text{MMLU%20score%20in%20English}})
-
-
-This measures how fairly a model represents Indic languages relative to English.
-
----
-
 ## Results
 
 ### Absolute Scores (Indic MMLU)
@@ -60,6 +50,15 @@ This measures how fairly a model represents Indic languages relative to English.
 **Observation:** Continual pretraining with MILA yields consistent gains across all Indic languages.
 
 ---
+
+## Experimetn 2: Fairness Metric: Indic Parity
+
+We define **parity** as the ratio of a model’s MMLU score in a given Indic language to its score in English:
+
+![equation](https://latex.codecogs.com/png.latex?\text{Parity}_L=\frac{\text{MMLU%20score%20in%20language%20}L}{\text{MMLU%20score%20in%20English}})
+
+This measures how fairly a model represents Indic languages relative to English.
+
 
 ### Indic Parity
 
