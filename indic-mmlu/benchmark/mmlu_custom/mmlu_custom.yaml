@@ -1,0 +1,23 @@
+group: mmlu_custom
+task:
+- mmlu_custom_Sindhi
+- mmlu_custom_Malayalam
+- mmlu_custom_Sanskrit
+- mmlu_custom_Gujarati
+- mmlu_custom_Hindi
+- mmlu_custom_Telugu
+- mmlu_custom_Nepali
+- mmlu_custom_Bengali
+- mmlu_custom_Oriya
+- mmlu_custom_Assamese
+- mmlu_custom_Kannada
+- mmlu_custom_Punjabi
+- mmlu_custom_Maithili
+- mmlu_custom_English
+- mmlu_custom_Marathi
+- mmlu_custom_Tamil
+aggregate_metric_list:
+- metric: acc
+  weight_by_size: true
+metadata:
+  version: '0.0'

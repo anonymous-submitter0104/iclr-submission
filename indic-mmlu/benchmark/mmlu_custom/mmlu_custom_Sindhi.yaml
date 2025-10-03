@@ -1,0 +1,8 @@
+include: _default_template_yaml
+dataset_path: json
+dataset_kwargs:
+  data_files: /workspace/bds/SFT/benchmark/mmmlu/ds_enchanced/try/final/mmlu_sdd_in.jsonl
+test_split: train
+tag: mmlu_custom-core
+task: mmlu_custom_Sindhi
+task_alias: mmlu_custom_Sindhi
