@@ -32,7 +32,7 @@ This repository is part of a research effort submitted to ICLR.
 
 Our objective is to **open-source large-scale Indian multilingual datasets** to strengthen the **open-source AI ecosystem** and promote **data sovereignty within the Indic AI community**.
 
-All our pipelines are built entirely on **open-source models hosted on Hugging Face**, ensuring full transparency and reproducibility. We **do not use any closed-source LLMs, VLMs, or proprietary AI systems** at any stage of data creation or processing — a deliberate choice to uphold **data sovereignty and ethical independence** in our work.
+All our pipelines are built entirely on **open-source models from Hugging Face**, ensuring full transparency and reproducibility. We **do not use any closed-source LLMs, VLMs, or proprietary AI systems** at any stage of data creation or processing — a deliberate choice to uphold **data sovereignty and ethical independence** in our work.
 
 If required, we are open to publishing benchmark comparisons against **closed-source or proprietary systems**. However, we have consciously chosen **not to use** such systems in our workflow.
 
@@ -40,7 +40,7 @@ This decision stems from our **commitment to ethical data handling** and our **p
 
 To uphold these standards, we have developed **fully open-source pipelines** that can be **deployed locally on GPU infrastructure**, ensuring both transparency and data integrity throughout the process.
 
-We intend to release not only the datasets but also the **data preparation recipes** and the accompanying open-source code. By doing so, we hope to enable the community to reproduce, extend, and innovate upon our methods in a fully transparent and sovereign manner.
+We intend to release not only the **datasets** but also the **data preparation recipes** and the accompanying open-source code. By doing so, we hope to enable the community to reproduce, extend, and innovate upon our methods in a fully transparent and sovereign manner.
 
 
 
