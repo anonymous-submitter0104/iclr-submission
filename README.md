@@ -31,7 +31,15 @@ _All releases will be hosted on Hugging Face after the review process with a acc
 
 This repository is part of a research effort submitted to ICLR. 
 
-Our objective is to open-source large-scale **Indian multilingual datasets** with the aim of strengthening the open-source AI ecosystem and fostering sovereignty within the Indic AI community. Importantly, all our pipelines are built exclusively on **open-source models available on Hugging Face**. No closed-source LLMs, VLMs, or proprietary AI systems are used at any stage.
+Our objective is to **open-source large-scale Indian multilingual datasets** to strengthen the **open-source AI ecosystem** and promote **data sovereignty within the Indic AI community**.
+
+All our pipelines are built entirely on **open-source models hosted on Hugging Face**, ensuring full transparency and reproducibility. We **do not use any closed-source LLMs, VLMs, or proprietary AI systems** at any stage of data creation or processing — a deliberate choice to uphold **data sovereignty and ethical independence** in our work.
+
+If required, we are open to publishing benchmark comparisons against **closed-source or proprietary systems**. However, we have consciously chosen **not to use** such systems in our workflow.
+
+This decision stems from our **commitment to ethical data handling** and our **partnership agreements** with multiple data providers. Using closed or proprietary systems for tasks like OCR, translation, or data processing would involve transferring sensitive data to external servers—**beyond the scope of our agreements**, and hence, would be **ethically inappropriate**.
+
+To uphold these standards, we have developed **fully open-source pipelines** that can be **deployed locally on GPU infrastructure**, ensuring both transparency and data integrity throughout the process.
 
 We intend to release not only the datasets but also the **data preparation recipes** and the accompanying open-source code. By doing so, we hope to enable the community to reproduce, extend, and innovate upon our methods in a fully transparent and sovereign manner.
 
