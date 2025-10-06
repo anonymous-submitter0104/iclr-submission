@@ -388,6 +388,6 @@ Workflow:
 
 ## Visual assets & tables
 
-We include per-language radar plots and a consolidated results panel in `plots/`. The README in the repo contains thumbnails; click through for full-resolution visuals. 
+We include per-language radar plots and a consolidated results panel in `indic-mmlu/assets/`. The README in the repo contains thumbnails; click through for full-resolution visuals. 
 
 ---
