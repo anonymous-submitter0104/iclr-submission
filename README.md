@@ -1,14 +1,13 @@
 # MILA: MULTILINGUAL INDIC LANGUAGE ARCHIVE
-
- _A smaller representative dataset has been uploaded in this repository. On acceptance of the paper, the full dataset will be released with proper legal licensing._
+_A DATASET FOR EQUITABLE MULTILINGUAL LLMS_
+ 
+_A smaller representative dataset has been uploaded in this repository. On acceptance of the paper, the full dataset will be released with proper legal licensing._
 
  ![Dataset Distribution](/readme-resources/token_distribution.png)
 
-_A DATASET FOR EQUITABLE MULTILINGUAL LLMS_
-
 Accompanying the Open review Submission [24079_MILA_MULTILINGUAL_INDIC_.pdf](https://github.com/anonymous-submitter0104/iclr-submission/blob/8308c89a777334fbeedba203fbb400c464961c60/24079_MILA_MULTILINGUAL_INDIC_.pdf) 
 
-Long Technical Report Link: 
+Long Technical Report Link: Coming Soon!
 
 ### Open Source Release
 
