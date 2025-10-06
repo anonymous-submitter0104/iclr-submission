@@ -43,6 +43,19 @@ To uphold these standards, we have developed **fully open-source pipelines** tha
 We intend to release not only the **datasets** but also the **data preparation recipes** and the accompanying open-source code. By doing so, we hope to enable the community to reproduce, extend, and innovate upon our methods in a fully transparent and sovereign manner.
 
 
+### ❤️ A Note from the Authors
+
+This work represents a **fundamentally foundational step** in what we believe to be one of the most important and underexplored areas of modern AI / Generative AI — **data preparation for training large language models**. While often considered an auxiliary process, our extensive experiments and ablation studies reaffirm that **careful data preparation is not just a prerequisite but a cornerstone** for building performant and responsible LLMs.
+
+Through our experience, we have come to realize that **data preparation for pretraining remains one of the most complex, least standardized, and least openly studied components** of the LLM pipeline. Despite being central to every foundation model’s success, **there exists no peer-reviewed framework or systematically validated body of work** in this space.
+
+Our intent with this submission is to **broaden the conversation on what constitutes valuable and rigorous scientific contribution** in AI. By presenting this work in a **peer-reviewed, open-source setting**, we hope to **encourage transparency, reproducibility, and community validation**, and to inspire other research groups and top-tier labs to bring similar efforts into the open domain.
+
+We firmly believe that **progress in generative AI should be built on openness, shared validation, and collective growth**. If this work helps spark even a small shift toward greater transparency in data processes and benchmarking, we would consider it a meaningful step forward — for the community, and for the collective progress of humanity in AI.
+
+
+
+
 
 
 
