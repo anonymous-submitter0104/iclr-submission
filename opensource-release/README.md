@@ -1,4 +1,3 @@
----
 
 ## 📘 Disclaimer
 
@@ -39,5 +38,5 @@ We strictly adhere to the following principles:
 * **Data sources** are either publicly available, synthetically constructed, or collected with appropriate permissions.
 * **Intended use** is for academic and research purposes only, in line with open science and ethical AI development.
 
----
+
 
