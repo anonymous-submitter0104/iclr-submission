@@ -134,7 +134,6 @@ Below are example files included in this release:
 
 The representative release spans multiple languages per document. Below is the **frequency of languages across all released files**:
 
-Perfect! Here's an enhanced version of the **Language Diversity heatmap** using **colored Unicode bars** in GitHub Markdown, which will make the heatmap visually appealing and easy to interpret:
 
 ```markdown
 
