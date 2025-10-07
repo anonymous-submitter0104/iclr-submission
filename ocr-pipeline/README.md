@@ -201,9 +201,9 @@ All model interactions are guided by instruction-grade prompts for reproducibili
 
 ## Download Image-Text Pairs Dataset
 
-This is a **representative sample set** of the full dataset, which will be released with **complete metadata annotations** and an **open-source license** upon paper acceptance.
+This is a **representative sample set** of the full dataset, which will be released with **complete metadata annotations** and an **open-source license** upon paper acceptance. This dataset will serve as a valuable resource for advancing **OCR** and **Document-VLM understanding, interpretation, and information extraction models**.
 
-- [Download Full Benchmark](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/opensource-release/image-text-pairs)
+- [Download Full Dataset](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/opensource-release/image-text-pairs)
 
 > ⚠️ Please cite this repository if you use the dataset in your research.
 
