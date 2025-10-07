@@ -15,9 +15,9 @@ Long Technical Report Link: [Full Technical Report (version-1) _Final Version Co
 
 **We will Open Source the following:**
 
-* **2T tokens** of high-quality pretraining data across **22 Scheduled Indian Languages**
-* **300M image–text pairs** (spanning Indian languages, enabling Indic OCR and VLM development)
-* **Indic Persona Hub (200M Indian virtual personas)**
+* **2 Trillion tokens** of high-quality pretraining data across **22 Scheduled Indian Languages**
+* **300 Million image–text pairs** (spanning Indian languages, enabling Indic OCR and VLM development)
+* **Indic Persona Hub (200 Million Indian virtual personas)**
 * **India-centric parallel translated corpora** across **22 Scheduled Indian Languages**
 * **Indic MMLU** benchmark covering 22 languages
 * **Domain-specific Indian taxonomies**
