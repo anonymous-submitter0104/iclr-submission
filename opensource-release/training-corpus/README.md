@@ -38,7 +38,7 @@ The corpus combines three main sources:
 
 | Component                                            | Tokens (Representative Subset) | Description                                                                                                  |
 | ---------------------------------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------ |
-| **High-Quality Indian English**                      | 20B                            | Curated monolingual Indian English text from literature, news, government documents, and web sources         |
+| **High-Quality Indian English**                      | 20B                            | Curated monolingual Indian English text from literature, news, government, and distilled from SoTA LLMs, documents, and web sources         |
 | **Indian English → Indian Language Parallel Corpus** | 30B                            | Parallel corpus covering multiple Indian languages for translation and cross-lingual modeling                |
 | **High-Quality Web Crawl**                           | 20B                            | Diverse web content including blogs, forums, and domain-specific websites, representative of Indian web text |
 
