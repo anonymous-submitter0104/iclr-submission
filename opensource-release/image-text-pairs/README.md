@@ -80,15 +80,6 @@ Each sample includes:
 
 ---
 
-## 🔗 Download Representative Samples
-
-[Download Image–Text Pairs (Representative Set)](#download-image-text-pairs-representative-set)
-
-> ⚠️ This release provides a **representative subset** of the full dataset.
-> The **complete dataset**, covering all **22 official Indian languages**, will be released upon paper acceptance.
-
----
-
 ## 🗓️ Future Release Plan
 
 * ✅ **This Release:** Representative samples for 8 Indian languages
