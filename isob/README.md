@@ -18,8 +18,9 @@
    * [Step 6: Style Transformation](#step-6-style-transformation)
    * [Step 7: Image Processing Augmentation](#step-7-image-processing-augmentation)
    * [Step 8: Storage & Annotation](#step-8-storage--annotation)
-6. [End Result](#end-result)
-7. [License & Data Usage](#license--data-usage)
+6. [Download ISOB-SMALL-HARD](#download-isob--small--hard)
+7. [End Result](#end-result)
+8. [License & Data Usage](#license--data-usage)
 
 ---
 
