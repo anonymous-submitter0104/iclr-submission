@@ -168,6 +168,5 @@ The representative release spans multiple languages per document. Below is the *
 ## 🛠️ Usage
 
 * Each OCR file corresponds **one-to-one** with its image.
-* Use the OCR text for **training or fine-tuning OCR models**.
-* Ideal for **multilingual Document-VLM pretraining**, **evaluation**, and **benchmarking**.
+* Ideal for **multilingual OCR, Document-VLM, evaluation**, and **benchmarking**.
 
