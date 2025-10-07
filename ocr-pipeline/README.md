@@ -104,7 +104,8 @@ Now correct this OCR output accordingly:
 
 ---
 
-## Step 4: Validation & Consistency Checking
+## Step 4: Validation & Consistency Checking 
+_Such efforts are especially needed, when dealing with extremely low-resource language related corpus_
 
 ### 4.1 Reconstruction with hOCR + Style Transfer
 
