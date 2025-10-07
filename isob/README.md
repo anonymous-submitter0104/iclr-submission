@@ -187,7 +187,7 @@ The goal is to expand the benchmark series while keeping ground truth controlled
 
 This is a **representative sample set** of the full dataset, which will be released with **complete metadata annotations** and an **open-source license** upon paper acceptance.
 
-- [Download Full Benchmark](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/opensource-release/isob-small-hard/image-text_pairs)
+- [Download Full Benchmark](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/opensource-release/isob-small-hard)
 
 > ⚠️ Please cite this repository if you use the dataset in your research.
 
