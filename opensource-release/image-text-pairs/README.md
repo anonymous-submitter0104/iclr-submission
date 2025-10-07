@@ -13,7 +13,6 @@
 * [Applications](#-applications)
 * [Languages Covered](#-languages-covered-representative-release)
 * [Dataset Structure](#-dataset-structure)
-* [Download Samples](#-download-representative-samples)
 * [Future Release Plan](#-future-release-plan)
 
 ---
