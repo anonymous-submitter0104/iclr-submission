@@ -7,7 +7,7 @@ _A smaller representative dataset has been uploaded in this repository. On accep
 
 Accompanying the Open review Submission [24079_MILA_MULTILINGUAL_INDIC_.pdf](https://github.com/anonymous-submitter0104/iclr-submission/blob/main/24079_MILA_MULTILINGUAL_INDIC_.pdf) 
 
-Long Technical Report Link: [Full Technical Report version-1, _Final Coming Soon!_](https://github.com/anonymous-submitter0104/iclr-submission/blob/main/Data%20Preparation%20Technical%20Report.pdf)
+Long Technical Report Link: [Full Technical (Report version-1)_Final Version Coming Soon!_](https://github.com/anonymous-submitter0104/iclr-submission/blob/main/Data%20Preparation%20Technical%20Report.pdf)
 
 ### Open Source Release
 
