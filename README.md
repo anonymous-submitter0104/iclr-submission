@@ -35,7 +35,7 @@ _All releases will be hosted on Hugging Face after the review process with a acc
 
 This repository contains all resources, scripts, and datasets associated with our ICLR submission. Each major section of the paper has a corresponding folder in this repository, containing **training scripts, ablation study scripts, and detailed READMEs** to ensure **reproducibility**.
 
-### Main Sections
+### 🎯 Main Sections
 
 1. [**Data Acquisition**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/data-acquisition) 
 2. [**Data Curation**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/data-curation) 
