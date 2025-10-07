@@ -5,9 +5,9 @@ _A smaller representative dataset has been uploaded in this repository. On accep
 
  ![Dataset Distribution](/readme-resources/token_distribution.png)
 
-Accompanying the Open review Submission [24079_MILA_MULTILINGUAL_INDIC_.pdf](https://github.com/anonymous-submitter0104/iclr-submission/blob/8308c89a777334fbeedba203fbb400c464961c60/24079_MILA_MULTILINGUAL_INDIC_.pdf) 
+Accompanying the Open review Submission [24079_MILA_MULTILINGUAL_INDIC_.pdf](https://github.com/anonymous-submitter0104/iclr-submission/blob/main/24079_MILA_MULTILINGUAL_INDIC_.pdf) 
 
-Long Technical Report Link: [Full Technical Report v-1](https://github.com/anonymous-submitter0104/iclr-submission/blob/106db2348d60c418273ef2bc4c013872bf70362a/Data%20Preparation%20Technical%20Report.pdf)
+Long Technical Report Link: [Full Technical Report v-1](https://github.com/anonymous-submitter0104/iclr-submission/blob/main/Data%20Preparation%20Technical%20Report.pdf)
 
 ### Open Source Release
 
