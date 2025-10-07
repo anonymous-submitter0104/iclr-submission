@@ -42,7 +42,7 @@ The corpus combines three main sources:
 | **Indian English → Indian Language Parallel Corpus** | 30B                            | Parallel corpus covering multiple Indian languages for translation and cross-lingual modeling                |
 | **High-Quality Web Crawl**                           | 20B                            | Diverse web content including blogs, forums, and domain-specific websites, representative of Indian web text |
 
-> **Representative subset** is provided for reviewers; full corpus will include **all 120B tokens** and associated metadata.
+> **Representative subset** is provided for reviewers; The full corpus will comprise all committed tokens along with their associated metadata, released under appropriate open-source licensing.
 
 ---
 
