@@ -37,29 +37,30 @@ This repository contains all resources, scripts, and datasets associated with ou
 
 ### Main Sections
 
-1. [**Data Acquisition**](https://github.com/anonymous-submitter0104/iclr-submission/tree/8af36b05830389e22ee34b56d570a27e9cc69c00/data-acquisition) 
-2. [**Data Curation**](https://github.com/anonymous-submitter0104/iclr-submission/tree/8af36b05830389e22ee34b56d570a27e9cc69c00/data-curation) 
-3. [**Data Organisation**](https://github.com/anonymous-submitter0104/iclr-submission/tree/8af36b05830389e22ee34b56d570a27e9cc69c00/data-organisation) 
-4. [**Indic MMLU**](https://github.com/anonymous-submitter0104/iclr-submission/tree/8af36b05830389e22ee34b56d570a27e9cc69c00/indic-mmlu) 
-5. [**OCR Pipeline**](https://github.com/anonymous-submitter0104/iclr-submission/tree/8af36b05830389e22ee34b56d570a27e9cc69c00/ocr-pipeline) 
-6. [**ISOB**](https://github.com/anonymous-submitter0104/iclr-submission/tree/8af36b05830389e22ee34b56d570a27e9cc69c00/isob) 
-7. [**Translation Pipeline**](https://github.com/anonymous-submitter0104/iclr-submission/tree/8af36b05830389e22ee34b56d570a27e9cc69c00/translation-pipeline) 
-8. [**Rewriting & Data Distillation**](https://github.com/anonymous-submitter0104/iclr-submission/tree/8af36b05830389e22ee34b56d570a27e9cc69c00/rewriting-data-distillation) 
-9. [**Final Experiment**](https://github.com/anonymous-submitter0104/iclr-submission/tree/8af36b05830389e22ee34b56d570a27e9cc69c00/final-experiment) 
+1. [**Data Acquisition**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/data-acquisition) 
+2. [**Data Curation**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/data-curation) 
+3. [**Data Organisation**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/data-organisation) 
+4. [**Indic MMLU**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/indic-mmlu) 
+5. [**OCR Pipeline**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/ocr-pipeline) 
+6. [**ISOB**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/isob) 
+7. [**Translation Pipeline**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/translation-pipeline) 
+8. [**Rewriting & Data Distillation**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/rewriting-data-distillation) 
+9. [**Final Experiment**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/final-experiment) 
 
 ---
 
 ### 🌐 Open Source Release
 
-For reviewer access, a **representative subset** of the full resources is available in the `OpenSource-Release` folder. This includes selected datasets and benchmarks to allow replication of core experiments. Upon **paper acceptance**, the full datasets will be released under proper **meta-data tagging** and **open-source licensing**.
+For reviewer access, a **representative subset** of the full open-source release is provided in the `opensource-release` folder. Upon **acceptance of the paper**, the complete datasets will be made publicly available with proper **metadata tagging** and under an **open-source license**.
+
 
 **Available Open Source Subfolders:**
 
-1. [**Indic MMLU**](https://github.com/anonymous-submitter0104/iclr-submission/tree/8af36b05830389e22ee34b56d570a27e9cc69c00/opensource-release/Indic%20MMLU) 
-2. [**Image-Text Pairs**](https://github.com/anonymous-submitter0104/iclr-submission/tree/8af36b05830389e22ee34b56d570a27e9cc69c00/opensource-release/image-text-pairs) 
-3. [**Indic Persona Hub**](https://github.com/anonymous-submitter0104/iclr-submission/tree/8af36b05830389e22ee34b56d570a27e9cc69c00/opensource-release/indic-personahub) 
-4. [**ISOB-SMALL-HARD**](https://github.com/anonymous-submitter0104/iclr-submission/tree/8af36b05830389e22ee34b56d570a27e9cc69c00/opensource-release/isob-small-hard) 
-5. [**Training Corpus**](https://github.com/anonymous-submitter0104/iclr-submission/tree/8af36b05830389e22ee34b56d570a27e9cc69c00/opensource-release/training-corpus) – Representative corpora for model training:
+1. [**Indic MMLU**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/opensource-release/Indic%20MMLU) 
+2. [**Image-Text Pairs**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/opensource-release/image-text-pairs) 
+3. [**Indic Persona Hub**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/opensource-release/indic-personahub) 
+4. [**ISOB-SMALL-HARD**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/opensource-release/isob-small-hard) 
+5. [**Training Corpus**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/opensource-release/training-corpus) – Representative corpora for model training:
 
    * **Indian English**
    * **Parallel Corpus**
