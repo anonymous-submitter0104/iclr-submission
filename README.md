@@ -1,9 +1,7 @@
 # MILA: MULTILINGUAL INDIC LANGUAGE ARCHIVE
 _A DATASET FOR EQUITABLE MULTILINGUAL LLMS_
 
- ---
- 
-_A smaller representative dataset has been uploaded in this repository. On acceptance of the paper, the full dataset will be released with proper legal licensing._
+---
 
  ![Dataset Distribution](/readme-resources/token_distribution.png)
 
@@ -27,7 +25,8 @@ Long Technical Report Link: [Full Technical Report (version-1) _Final Version Co
 * **Crawling and Scraping Pipelines**
 * **First of its Kind Synthetic OCR Benchmark ISOB** across **22 Schedules Indian Languages**
 
-_All releases will be hosted on Hugging Face after the review process with a accompanying license, in compliance with open-source best practices._
+**_A representative subset, reflecting the committed full open release, is available in this repository. Upon paper acceptance, the full dataset—together with proper legal licensing—will be released on GitHub and Hugging Face, in accordance with open-source best practices._**
+
 
 ---
 
