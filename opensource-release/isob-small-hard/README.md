@@ -12,7 +12,6 @@
 * [Languages Covered](#-languages-covered)
 * [Files in This Release](#-files-in-this-release)
 * [Language Diversity](#-language-diversity)
-* [Download](#-download)
 * [Usage](#-usage)
 
 ---
