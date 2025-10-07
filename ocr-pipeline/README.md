@@ -1,3 +1,42 @@
+# OCR Pipeline
+
+## 📚 Table of Contents
+
+* [Multi-Stage OCR Processing and Validation Pipeline](#multi-stage-ocr-processing-and-validation-pipeline)
+
+  * [Step 1: Pre-Processing](#step-1-pre-processing)
+
+    * [1.1 Error Identification using VLMs](#11-error-identification-using-vlms)
+    * [1.2 Artifact Removal & Enhancement](#12-artifact-removal--enhancement)
+  * [Step 2: OCR Generation with Human-in-the-Loop](#step-2-ocr-generation-with-human-in-the-loop)
+  * [Step 3: Post-OCR Quality Enhancement](#step-3-post-ocr-quality-enhancement)
+  * [Step 4: Validation & Consistency Checking](#step-4-validation--consistency-checking)
+
+    * [4.1 Reconstruction with hOCR + Style Transfer](#41-reconstruction-with-hocr--style-transfer)
+    * [4.2 Embedding Similarity Check](#42-embedding-similarity-check)
+    * [4.3 Reasoning-Based Validation with VLMs](#43-reasoning-based-validation-with-vlms)
+    * [4.4 Trajectory Comparison with LLMs](#44-trajectory-comparison-with-llms)
+    * [4.5 Score-Reason Consistency Check](#45-score-reason-consistency-check)
+  * [Step 5: Human Expert Review and Manual Post-Correction](#step-5-human-expert-review-and-manual-post-correction)
+* [Download Image-Text Pairs Dataset](#download-image-text-pairs-dataset)
+* [Evaluation](#evaluation)
+
+  * [Metrics](#metrics)
+  * [LLM-Assisted Quality Evaluation](#llm-assisted-quality-evaluation)
+  * [Experimental Results](#experimental-results)
+
+    * [Without Preprocessing and Postprocessing](#without-preprocessing-and-postprocessing)
+    * [Word Error Rate (WER) Evaluation Across Languages](#word-error-rate-wer-evaluation-across-languages)
+    * [With Preprocessing and Postprocessing](#with-preprocessing-and-postprocessing)
+* [Key Findings](#key-findings)
+* [Ablation Experiment: Vanilla OCR vs OCR + Post Correction](#ablation-experiment-vanilla-ocr-vs-ocr--post-correction)
+
+  * [Observations](#observations)
+* [Model Architecture (310M Parameters)](#model-architecture-310m-parameters)
+* [Validation Loss Comparison](#validation-loss-comparison)
+
+---
+
 # Multi-Stage OCR Processing and Validation Pipeline
 
 **Input:** Digitized or undigitized document images (low-quality, noisy, or artifact-rich)
